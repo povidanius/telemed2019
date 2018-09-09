@@ -1,0 +1,162 @@
+\documentclass[a4paper,11pt]{article}
+ 
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[ansinew]{inputenc}
+\usepackage{bbold}
+\usepackage{bold-extra}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{tkz-berge}
+\usepackage{amsfonts}
+\usepackage{gensymb}
+\usepackage{mathtools}
+\usepackage{subfigure}
+\usepackage{theorem}
+\usepackage{bm}
+\usepackage{xcolor}
+\usepackage[unicode]{hyperref}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usetikzlibrary{positioning}
+\usepackage{tikz}
+\usepackage{empheq}
+\usepackage{booktabs}
+\usepackage{authblk}
+\usetikzlibrary{arrows,shapes}
+\usetikzlibrary{arrows}
+
+%\usepackage{3dplot} %requires 3dplot.sty to be in same directory, or in your LaTeX installation
+%\usepackage{amsmath,amsfonts,amssymb,amsthm,epsfig,epstopdf,titling,url,array}
+\usepackage{xstring}
+
+%\theoremstyle{definition}
+%\newtheorem{defn}{Definition}[section]
+%\newtheorem{conj}{Conjecture}[section]
+%\newtheorem{exmp}{Example}[section]
+\makeatletter
+\newcommand{\change@uppercase@math}{%
+  \count@=`\A
+  \loop
+    \mathcode\count@\count@
+    \ifnum\count@<`\Z
+    \advance\count@\@ne
+  \repeat}
+
+\newcommand{\LSTM}[1]{
+  \mathrm{LSTM}(
+  %(\begingroup\change@uppercase@math#1\endgroup)
+}
+
+\newcommand{\ENC}[1]{
+  \mathrm{ENC}(
+  %(\begingroup\change@uppercase@math#1\endgroup)
+}
+
+\newcommand{\DEC}[1]{
+  \mathrm{DEC}(
+  %(\begingroup\change@uppercase@math#1\endgroup)
+}
+
+\newcommand{\UPDATE}[1]{
+  \mathrm{UPDATE}(
+  %(\begingroup\change@uppercase@math#1\endgroup)
+}
+
+\newcommand{\READ}[1]{
+  \mathrm{READ}(
+ % (\begingroup\change@uppercase@math#1\endgroup)
+}
+
+\newcommand{\CIRC}[1]{
+  \mathrm{circ}(
+ % (\begingroup\change@uppercase@math#1\endgroup)
+}
+
+\newcommand{\RNN}[1]{
+  \mathrm{RNN}(
+ % (\begingroup\change@uppercase@math#1\endgroup)
+}
+
+\newcommand{\ReLU}[1]{
+  \mathrm{ReLU}(
+ % (\begingroup\change@uppercase@math#1\endgroup)
+}
+
+
+\newcommand{\softmax}[1]{
+  \mathrm{softmax}(
+ % (\begingroup\change@uppercase@math#1\endgroup)
+}
+
+
+\makeatother
+
+\newcommand*\GetListMember[2]{\StrBetween[#2,\number\numexpr#2+1]{,#1,},,\par}%
+\newcommand{\tikzmark}[1]{\tikz[overlay,remember picture] \node (#1) {};}
+
+\def\spvec#1{\left(\vcenter{\halign{\hfil$##$\hfil\cr \spvecA#1;;}}\right)}
+\def\spvecA#1;{\if;#1;\else #1\cr \expandafter \spvecA \fi}
+
+\newlength{\MidRadius}
+\newcommand*{\CircularSequence}[3]{%
+    % #1 = outer circle radius
+    % #2 = inner circle radius
+    % #3 = seqeunce
+    \StrCount{#3}{,}[\NumberOfElements]
+    \pgfmathsetmacro{\AngleSep}{360/(\NumberOfElements+1)}
+    \pgfmathsetlength{\MidRadius}{(#1+#2)/2}
+    \draw [red,  ultra thick] circle (#2);
+    \draw [blue, ultra thick] circle (#1);
+%    \draw [thick,->] (0, 0) -- (1.0, 0);
+%    \draw [thick,->] (0, 0) -- (0.0, 1.0);
+    \foreach [count = \Count] \Angle in {0,\AngleSep,..., 360} {%
+        \draw [gray, ultra thick] (\Angle:#2) -- (\Angle:#1);
+        \pgfmathsetmacro{\MidPoint}{\Angle+\AngleSep/2}
+        \node at (\MidPoint:\MidRadius) {\GetListMember{#3}{\Count}};
+    }%7
+}%
+
+
+\author{Povilas Daniu\v{s}is, Audrius Indriulionis, Andrius Budrionis}
+
+
+\title{Computer Vision-based System for Blinds and Visually Impaired}
+
+\begin{document}
+\pgfdeclarelayer{background}
+\pgfsetlayers{background,main}
+
+
+\maketitle
+
+
+\section{Introduction}
+
+According to \cite{Bourne} more than $250$ million persons have moderate to severe vision impairment ($\approx 36$ million are blind). During past decades significant effort was devoted by various authors to develop computer vision and other sensor based aids (e.g. \cite{Caraiman}, \cite{Csapo}, \cite{Poggi}, \cite{Zientara}) for helping the blind and visually impaired users to perceive the world around. However, computer vision is rapidly evolving field, and systems based on aforementioned approaches often lack accuracy and reliability in real-world conditions. In this article we describe system, which allow to use are modern computer vision methods for compensation of lost or impaired vision function in humans. We assume that mobile device equivalent or very similar to smartphone is used by the visually impaired person to perceive visual information from the environment. Since most of computer vision algorithms require rather intensive computational power exceeding than that of smartphone, we also assume that image processing itself is conducted in separate machine, connected to the mobile device via Internet, and calculated audio or tactile feedback signal is transmited to the mobile device for presentation to the user.
+
+\section{Method}
+
+\section{System}
+
+\section{Discussion}
+
+
+\begin{thebibliography}{1}
+
+
+\bibitem{Bourne} Bourne RRA, Flaxman SR, Braithwaite T, Cicinelli MV, Das A, Jonas JB, et al.; Vision Loss Expert Group. Magnitude, temporal trends, and projections of the global prevalence of blindness and distance and near vision impairment: a systematic review and meta-analysis. Lancet Glob Health.  2017 Sep;5(9):e888-97.
+
+\bibitem{Caraiman} Caraiman, S., Morar, A., Owczarek, M.,Burlacu, A., Rzeszotarski, D., Botezatu, N., Herghelegiu, P., Moldoveanu, F., Strumillo, P., Moldoveanu, A. Computer Vision for the Visually Impaired: the Sound of Vision System. IEEE International Conference on Computer Vision Workshops, pp. 1480-1489, 2017.
+\bibitem{Csapo} Csap\'{o}, A., Wers\'{e}nyi, G., Nagy, H., Stockman, T. A survey of assistive technologies and applications for blind users on mobile platforms: a review and foundation for research. Journal on Multimodal User Interfaces. Vol. 9, issule 4,  pp. 275-286, 2015.
+\bibitem{Poggi} Poggi, M., Mattoccia, S. A wearable mobility aid for the visually impaired based on embedded 3d vision and deep learning. Proceeding of IEEE Symposium on Compututers and Communication, pp. 208-213, 2016.
+\bibitem{Zientara} Zientara, P.,A., Lee, S., Smith, G., H., Brenner, R., Itti, L., Rosson M., B., Carroll, J., M., Irick K., M., Narayanan, V. Third Eye: A shopping assistant for the visually impaired. Computer Vol. 50, Issue 2, pp. 16-24, 2017.
+
+
+\end{thebibliography}
+
+\end{document}
