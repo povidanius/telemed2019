@@ -141,12 +141,16 @@
 
 \section{Introduction}
 
-According to \cite{Bourne} more than $250$ million persons have moderate to severe vision impairment ($\approx 36$ million are blind). During past decades significant effort was devoted by various authors to develop computer vision and other sensor based aids (e.g. \cite{Caraiman}, \cite{Csapo}, \cite{Poggi}, \cite{Zientara}) for helping the blind and visually impaired users to perceive the world around. However, computer vision is rapidly evolving field, and systems based on aforementioned approaches often lack accuracy and reliability in real-world conditions. In this article we describe realistic system, which allow to use modern computer vision methods for compensation of lost or impaired vision function in humans. We assume that mobile device equivalent or very similar to smartphone is used by the visually impaired person to perceive visual information from the environment by inbuilt or auxiliary cameras. Since most of computer vision algorithms require rather intensive computational power exceeding than that of smartphone, we also assume that image processing itself can be conducted in separate machine, connected to the mobile device via Internet, and calculated audio or tactile feedback signal is transmited to the mobile device for presentation to the user. %Such a set up is realistic in urban areas, where population. 
+According to \cite{Bourne} more than $250$ million persons have moderate to severe vision impairment ($\approx 36$ million are blind). During past decades significant effort was devoted by various authors to develop computer vision and other sensor based aids (e.g. \cite{Caraiman}, \cite{Csapo}, \cite{Poggi}, \cite{Zientara}) for helping the blind and visually impaired users to perceive the world around. However, computer vision is rapidly evolving field, and systems based on aforementioned approaches often lack accuracy and reliability in real-world conditions. In this article we describe realistic system, which allow to use modern computer vision methods for compensation of lost or impaired vision function in humans. The article is organized as follows: in Section~\ref{sec:method} we describe our method, Section~\ref{sec:results} contains schematic and description of human vision compensation system (HVCS), which is the result of this research, and Section~\ref{sec:discussion} is devoted for the discussion.
 
-According to \cite{Bourne} more than $250$ million persons have moderate to severe vision impairment ($\approx 36$ million are blind). During past decades significant effort was devoted by various authors to develop computer vision and other sensor based aids (e.g. \cite{Caraiman}, \cite{Csapo}, \cite{Poggi}, \cite{Zientara}) for helping the blind and visually impaired users to perceive the world around. However, computer vision is rapidly evolving field, and systems based on aforementioned approaches often lack accuracy and reliability in real-world conditions. In this article we describe realistic system, which allow to use modern computer vision methods for compensation of lost or impaired vision function in humans. We assume that mobile device equivalent or very similar to smartphone is used to perceive visual information from the environment. Since most of computer vision algorithms require rather intensive computational power exceeding than that of smartphone, we also assume that image processing itself is conducted in separate machine, connected to the mobile device via Internet, and calculated audio or tactile feedback signal is transmited to the mobile device for presentation to the user.
+
+%We assume that mobile device equivalent or very similar to smartphone is used by the visually impaired person to perceive visual information from the environment by inbuilt or auxiliary cameras. Since most of computer vision algorithms require rather intensive computational power exceeding than that of smartphone, we also assume that image processing itself can be conducted in separate machine, connected to the mobile device via Internet, and calculated audio or tactile feedback signal is transmited to the mobile device for presentation to the user. 
+
+%According to \cite{Bourne} more than $250$ million persons have moderate to severe vision impairment ($\approx 36$ million are blind). During past decades significant effort was devoted by various authors to develop computer vision and other sensor based aids (e.g. \cite{Caraiman}, \cite{Csapo}, \cite{Poggi}, \cite{Zientara}) for helping the blind and visually impaired users to perceive the world around. However, computer vision is rapidly evolving field, and systems based on aforementioned approaches often lack accuracy and reliability in real-world conditions. In this article we describe realistic system, which allow to use modern computer vision methods for compensation of lost or impaired vision function in humans. We assume that mobile device equivalent or very similar to smartphone is used to perceive visual information from the environment. Since most of computer vision algorithms require rather intensive computational power exceeding than that of smartphone, we also assume that image processing itself is conducted in separate machine, connected to the mobile device via Internet, and calculated audio or tactile feedback signal is transmited to the mobile device for presentation to the user.
 
 \section{Method}
 \label{sec:method}
+
 Following the principles of participatory design \cite{Kensing}, \cite{Carroll} we included the final users into the design process of the system. Two visually impaired persons participated in discussion and focus group meetings together with the project team to identify the key properties of the solution. During the six discussion sessions major attention was paid to:
 \begin{enumerate}
 \item Functionality and key features of the solution addressing real-life scenarios of visually impaired persons;
@@ -156,15 +160,14 @@ Following the principles of participatory design \cite{Kensing}, \cite{Carroll} 
 \end{enumerate}
 Design process involved testing of the existing technological solutions (mobile phone apps) for assisting visually impaired persons {\color{red}(which ones have we tested?)}. Semi-structured tests were performed by the visually impaired participants accompanied by a researcher from a project group. Strengths and weaknesses of the existing solutions are reflected in the design of the proposed system. 
 
-
-\newpage
+%\newpage
 %patarciau skyreli vadint "Results" o ne "System".
-\section{System}
-\label{sec:system}
+\section{Results}
+\label{sec:results}
 
 \begin{wrapfigure}{r}{0.4\textwidth}
   \begin{center}
-    \includegraphics[scale=0.7]{./img/SmartDevice_diagram.pdf}  
+    \includegraphics[scale=0.7]{./img/cropped_diagram.pdf}  
   \end{center}
   \caption{Schematics of FRP device.}
   \label{fig:schematics}
@@ -172,9 +175,9 @@ Design process involved testing of the existing technological solutions (mobile 
 
 Following the above methodology we suggest impaired human vision compensation system (\textbf{HVCS}), consisting of \textbf{Device} and \textbf{Inference} components (see Fig.~\ref{fig:schematics}).
 
-\textbf{Device} subsystem is continuously carried by the user. It consists of sensors and actuators, integrated into smartphone-based computation core, which was chosen due its avialability to wide population, and capability to carry out required computations or forward them to external server via Internet connection. Sensors are mounted forehead belt include: RGB camera, depth camera, IMU. Actuator set consists of bone conductive headphones, and head belt for presenting tactile-feedback to the user. %We suggest to use bone conductive headphones, ... 
+\textbf{Device} subsystem is continuously carried by the user. It consists of sensors and actuators, integrated into smartphone-based computation core, which was chosen due its avialability to wide population, and capability to carry out required computations or forward them to external server via Internet connection. Sensors are mounted on forehead belt include: RGB camera, depth camera, IMU. Actuator set consists of bone conductive headphones, and head belt for presenting tactile-feedback to the user. %We suggest to use bone conductive headphones, ... 
 
-\textbf{Inference} subsystem consists of server computer with internet connection and set of computer vision algorithms, selected according to our methodology (see. Sec.~\ref{sec:method}): Faster RCNN object detector \cite{?}, trained to detect important objects (doors, floors, elevators,...), CNN-RNN-based scene description \cite{Liu},\cite{Ren}, \cite{Dai}, place recognition \cite{Ohn-Bar}, face recognition \cite{Amos}, obstacle detection \cite{Laina}, and possibly other modules. 
+\textbf{Inference} subsystem consists of server computer with internet connection and set of computer vision algorithms, selected according to our methodology (see. Sec.~\ref{sec:method}): Faster RCNN object detector \cite{?}, trained to detect important objects (doors, floors, elevators, stairs, corridor junctions, etc.), CNN-RNN-based scene description \cite{Liu},\cite{Ren}, \cite{Dai}, place recognition \cite{Ohn-Bar}, face recognition \cite{Amos}, obstacle detection \cite{Laina}, and possibly other modules. 
 
 HVCS operation cycle is started by \textbf{Device} reading sensor data and transmitting it to the server for an analysis. Server calculates feedback signal and transmits it back to the device for presenting to the user.
 
@@ -183,6 +186,9 @@ HVCS operation cycle is started by \textbf{Device} reading sensor data and trans
 \label{sec:discussion}
 
 In this article we outlined an idea of computer vision-based sensor, which can help to partially compensate impaired or lost human sight. The developed head mounted tactile device is deveolped for head position and orientation tracking and could capture an image in front of visually impaired people. The tactile device with integrated 3D deph camera is integrated with smartphone by bluetooth which could preprocess the labeled image features. The developed high quality self navigation system is based on the computer vision methods especially enhancing the capabilities to detect and classify objects (e.g bus station, street crossings, ) with their surrounding objects. The authors expect to increase the capabilies of potentially blind to secure navigate especially for the planed destination (e.g. "home-office"). 
+
+Work left (outdoor/indoor) etc.
+
 
 
 \begin{thebibliography}{1}
@@ -201,9 +207,9 @@ A general-purpose face recognition library with mobile applications. Technical r
 \bibitem{Ohn-Bar}  Ohn-Bar, E., Kitani, K., Asakawa, Ch. Personalized Dynamics Models for Adaptive Assistive Navigation Interfaces. arXiv:1804.04118, [cs.LG], 2018.
 \bibitem{Ren} Ren, Sh., He, K., Girshick, R., and Sun, J.  Faster R-CNN: Towards real-time object detection with region proposal networks. In Advances in neural information processing systems, pp. 91-99, 2015.
 
-\bibitem{Kensing} Kensing, F., Simonsen, J., and Bødker, K. MUST: A Method for Participatory Design. Hum-Comput Interact, vol. 13, no. 2, pp. 167–198, Jun. 1998.
+\bibitem{Kensing} Kensing, F., Simonsen, J., and B\o dker, K. MUST: A Method for Participatory Design. Hum-Comput Interact, vol. 13, no. 2, pp. 167-198, Jun. 1998.
 
-\bibitem{Carroll} Carroll, J. M., Rosson, M. B. Participatory design in community informatics. Des. Stud., vol. 28, no. 3, pp. 243–261, May 2007.
+\bibitem{Carroll} Carroll, J. M., Rosson, M. B. Participatory design in community informatics. Des. Stud., vol. 28, no. 3, pp. 243-261, May 2007.
 
 \end{thebibliography}
 
