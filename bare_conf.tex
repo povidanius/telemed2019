@@ -382,11 +382,12 @@ Email: {\tt ...}}
 Springfield, USA\\
 Email: {\tt homer@thesimpsons.com}}
 \and
-\IEEEauthorblockN{~\\[-0.4ex]\large James Kirk\\ and Montgomery Scott\\[0.3ex]\normalsize}
-\IEEEauthorblockA{Starfleet Academy\\
-San Francisco, California 96678-2391\\
-Telephone: (800) 555--1212\\
-Fax: (888) 555--1212}}
+\IEEEauthorblockN{~\\[-0.4ex]\large Andrius Budrionis\\[0.3ex]\normalsize}
+\IEEEauthorblockA{Vilnius Gediminas Technical University\\
+Vilnius, Lithuania\\
+Norwegian Centre for E-health Research\\
+University Hospital of North Norway\\
+Tromsø, Norway}}
 
 % conference papers do not typically use \thanks and this command
 % is locked out in conference mode. If really needed, such as for
@@ -442,7 +443,7 @@ The abstract goes here.
 % no keywords
 
 \begin{IEEEkeywords}
-Anything; Something; Everything else.%
+Computer vision; Mobile application; Travel aid; Tactile. %
 \end{IEEEkeywords}
 
 
@@ -461,7 +462,7 @@ Anything; Something; Everything else.%
 \section{Introduction}
 \label{sec:introduction}
 
-More than $250$ million poople worldwide have moderate to severe vision impairment, while ($\approx 36$ million are blind) \cite{Bourne}. During the past decades significant effort was devoted to develop computer vision and other sensor based aids (e.g. \cite{Caraiman}, \cite{Csapo}, \cite{Poggi}, \cite{Zientara}) for helping the blind and visually impaired users to perceive the surrounding world. However, computer vision is rapidly evolving field, and systems based on the aforementioned approaches often lack accuracy and reliability in real-world conditions. In this article we describe a system, which employs modern computer vision techniques for compensation of lost or impaired vision function in humans. Many of the previuosly proposed electronic aids for the blind count on highly specialised hardware, for instance smart glassess \cite{Zientara}, Microsoft Kinnect sensors \cite{Owayjan}, helmet-mounted photosensors and cameras \cite{Larisa}. Such advanced and costly technology brings additional complexity into daily tasks, which visually impaired people currently manage by the help of the white cane. This project puts major emphasis on developing a tool, which seamlesly integrates with the hardware visually impaired person already has on-hand and is used to (smartphone). This paper describes the high level architecture of the proposed technology aid for visually impaired people. 
+More than $250$ million poople worldwide have moderate to severe vision impairment, while ($\approx 36$ million are blind) \cite{Bourne}. During the past decades significant effort was devoted to develop computer vision and other sensor based aids (e.g. \cite{Caraiman}, \cite{Csapo}, \cite{Poggi}, \cite{Zientara}) for helping the blind and visually impaired users to perceive the surrounding world. However, computer vision is rapidly evolving field, and systems based on the aforementioned approaches often lack accuracy and reliability in real-world conditions. In this article we describe a system, which employs modern computer vision techniques for compensation of lost or impaired vision function in humans. Many of the previuosly proposed electronic aids for the blind count on highly specialised hardware, for instance smart glassess \cite{Zientara}, Microsoft Kinnect sensors \cite{Owayjan}, helmet-mounted photosensors and cameras \cite{Larisa}. Such advanced and costly technology brings additional complexity into daily tasks, which visually impaired people currently manage by the help of a white cane. This project puts major emphasis on developing a tool, which seamlesly integrates with the hardware visually impaired person already has on-hand and is used to (smartphone). This paper describes a high level architecture of the proposed technology aid for visually impaired people. 
 
 
 \section{Method}
@@ -474,10 +475,7 @@ Following the principles of participatory design \cite{Kensing}, \cite{Carroll} 
 \item Interface between the visually impaired person and the assisted technology;
 \item Appearance, usability and potential costs of the final product. 
 \end{enumerate}
-Design process involved testing of the existing technological solutions (mobile phone apps) for assisting visually impaired persons {\color{red}(which ones have we tested?)}. Semi-structured tests were performed by the visually impaired participants accompanied by a researcher from a project group. Strengths and weaknesses of the existing solutions are reflected in the design of the proposed system. 
-
-
-
+Design process involved testing of the existing tmobile phone app (Seeing AI) for assisting visually impaired persons. Semi-structured tests were performed by the visually impaired participants accompanied by a researcher from a project group. Strengths and weaknesses of the existing solutions are reflected in the design of the proposed system. 
 
 
 
@@ -497,9 +495,9 @@ Design process involved testing of the existing technological solutions (mobile 
 Following the above methodology we suggest the impaired human vision compensation system (\textbf{HVCS}), consisting of \textbf{Device} and \textbf{Inference} components (see Fig.~\ref{fig:schematics}).
 
 %padalijimas i 2 komponentus man nelabai aiskus. As dalinciau i input (kameros, sensoriai), output (ausines, vibratoriu matricos), processing (local, remote). 
-% tai kas dabar yra prie Inference, siulau perprazuot kaip Functionality, ka as minejau Method. Taip pat visa Results skyreli reiktu labiau susiet su Method. Reiktu, kad visi 4 Method pamineti punktai isrysketu ir Results. 
+% tai kas dabar yra prie Inference, siulau perfrazuot kaip Functionality, ka as minejau Method. Taip pat visa Results skyreli reiktu labiau susiet su Method. Reiktu, kad visi 4 Method pamineti punktai isrysketu ir Results. 
 %Results skyrelyje nereiktu taip stipriai fokusuotis i kitu grupiu tyrimus ir juos cituoti. Rezultatai juk musu.
-\textbf{Device} subsystem is a computational device the user currently uses for completing other daily tasks. It consists of sensors and actuators, integrated into smartphone-based computation core, which was chosen due its avialability to wide population, and capability to perform the required computations or forward visual information to the external server via Internet connection. Sensors are mounted on forehead belt include: RGB camera, depth camera, IMU. Actuator set consists of bone conductive headphones, and head belt for presenting tactile-feedback to the user. %We suggest to use bone conductive headphones, ... 
+\textbf{Device} subsystem is a computational device the user currently uses for completing other daily tasks. It consists of sensors and actuators, integrated into smartphone-based computational core, which was chosen due its avialability to wide population, and capability to perform the required computations or forward visual information to the external server via the Internet connection. Sensors are mounted on forehead belt include: RGB camera, depth camera, IMU. Actuator set consists of bone conductive headphones, and head belt for presenting tactile-feedback to the user. %We suggest to use bone conductive headphones, ... 
 
 \textbf{Inference} subsystem consists of server computer with internet connection and set of computer vision algorithms, selected according to our methodology (see. Sec.~\ref{sec:method}): Faster RCNN object detector \cite{?}, trained to detect important objects (doors, floors, elevators, stairs, corridor junctions, etc.), CNN-RNN-based scene description \cite{Liu},\cite{Ren}, \cite{Dai}, place recognition \cite{Ohn-Bar}, face recognition \cite{Amos}, obstacle detection \cite{Laina}, and possibly other modules. 
 
@@ -508,6 +506,7 @@ HVCS operation cycle is started by \textbf{Device} reading sensor data and trans
 \section{Discussion}
 \label{sec:discussion}
 %Didzioji Discussion teksto dalis man labiau tinka prie Results/Conclusion. Gal galim padiskutioti daugiau apie Limitations, Future Implications, Lessons Learned ar pan... Cia galime savo siuloma sistema lyginti su anksciau publikuotais rezultatais. 
+
 
 In this article we outlined an idea of complex computer vision-based sensor architecture, which can help to partially compensate impaired or lost human sight. Main improvements comparing to similar previous work (\cite{?}, \cite{?}) is: ability to use efficient (but still computationally intensive) modern computer vision algorithms via Internet connection, present the signal to the user by combined bone conductive headphone-tactile actuator, low cost and consequently increased potential availability of the device. Suggested architecture can be used as basis for various computer vision-based systems, allowing to help visually impaired users in everyday routines (e.g. outdoor/indoor navigation,...). On the other side, due to remotelly carried visual analysis, in some cases the suggested system may suffer from too large latency, its reliability depends on stability and quality of Internet connection. Such a problem partially may be solved in near future, when 5G networks will prevail.
 
