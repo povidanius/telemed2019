@@ -176,12 +176,21 @@ Design process involved testing of the existing technological solutions (mobile 
   \label{fig:schematics}
 \end{wrapfigure}
 
+
+The key functionality of smart device enables to label the road 'home-office' on the real map that helps  visually impaired community expand the knowledge about the assitive roads for safe navigation. The composed solution of labeled object  location and direction detection assisted by smartphone device enables to trust the new developed technology for visually impaired people.
+
+Technical feasibility
+After the survey of visually impaired people needs the authors came to conclusion from 5 to 8 object class should be detected the position and orientation and the key feasibility of device should help to learn the "home-office" road in most efficient way.
+The recent developments of computing vision algorithms show the more promising results integrating the smartphone devices for image capturing and preprocessing.  The computational resources are allocated to perform 
+%Interface
+Light weighted and head mounted tactile device receives the information from server about the object location, including distance and direction to it. The bone headphone device will be used for assistive information provided through internet server...
+
 Following the above methodology we suggest the impaired human vision compensation system (\textbf{HVCS}), consisting of \textbf{Device} and \textbf{Inference} components (see Fig.~\ref{fig:schematics}).
 
 %padalijimas i 2 komponentus man nelabai aiskus. As dalinciau i input (kameros, sensoriai), output (ausines, vibratoriu matricos), processing (local, remote). 
 % tai kas dabar yra prie Inference, siulau perprazuot kaip Functionality, ka as minejau Method. Taip pat visa Results skyreli reiktu labiau susiet su Method. Reiktu, kad visi 4 Method pamineti punktai isrysketu ir Results. 
 %Results skyrelyje nereiktu taip stipriai fokusuotis i kitu grupiu tyrimus ir juos cituoti. Rezultatai juk musu.
-\textbf{Device} subsystem is a computational device the user currently uses for completing other daily tasks. It consists of sensors and actuators, integrated into smartphone-based computation core, which was chosen due its avialability to wide population, and capability to perform the required computations or forward visual information to the external server via Internet connection. Sensors are mounted on forehead belt include: RGB camera, depth camera, IMU. Actuator set consists of bone conductive headphones, and head belt for presenting tactile-feedback to the user. %We suggest to use bone conductive headphones, ... 
+\textbf{Device} subsystem is a computational device the user currently uses for completing other daily tasks. It consists of sensors and actuators, integrated into smartphone-based computation core, which was chosen due its avialability to wide population, and capability to perform the required computations or forward visual information to the external server via Internet connection. Sensors are mounted on forehead belt include: RGB camera, depth camera, IMU. Actuator set consists of bone conductive headphones, and head belt for presenting tactile-feedback to the user. The smartphone device would be integrated with sensors due to capture the street image. The low resources computational device preprocess the image and sends to server to detect the object.  %We suggest to use bone conductive headphones, ... 
 
 \textbf{Inference} subsystem consists of server computer with internet connection and set of computer vision algorithms, selected according to our methodology (see. Sec.~\ref{sec:method}): Faster RCNN object detector \cite{?}, trained to detect important objects (doors, floors, elevators, stairs, corridor junctions, etc.), CNN-RNN-based scene description \cite{Liu},\cite{Ren}, \cite{Dai}, place recognition \cite{Ohn-Bar}, face recognition \cite{Amos}, obstacle detection \cite{Laina}, and possibly other modules. 
 
@@ -197,7 +206,9 @@ In this article we outlined an idea of computer vision-based sensor, which can h
 Work left (outdoor/indoor) etc.
 
 
-
+What are main advantages in our proposed solution? What is the reason there is no proposed solution at all?
+What exact technical solution should be implemented/developed?
+What feasibility and key features are most important for visually impaired people?
 \begin{thebibliography}{1}
 \bibitem{Amos} Amos, B., Ludwiczuk, B., and Satyanarayanan, M. Openface:
 A general-purpose face recognition library with mobile applications. Technical report, CMU-CS-16-118, CMU School of Computer Science, 2016.
