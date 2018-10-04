@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.30)  4 OCT 2018 18:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.10)  4 OCT 2018 21:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -293,7 +293,7 @@ id other resource which is no dict (key 'ProcSets', type <array>); ignored.
 Here is how much of TeX's memory you used:
  3299 strings out of 493029
  54913 string characters out of 6136234
- 116799 words of memory out of 5000000
+ 117801 words of memory out of 5000000
  6828 multiletter control sequences out of 15000+600000
  32419 words of font info for 62 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -304,7 +304,7 @@ c}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
 /texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/urw/times/utmr8a.pfb>
-Output written on bare_conf.pdf (2 pages, 306669 bytes).
+Output written on bare_conf.pdf (2 pages, 306753 bytes).
 PDF statistics:
  50 PDF objects out of 1000 (max. 8388607)
  30 compressed objects within 1 object stream
