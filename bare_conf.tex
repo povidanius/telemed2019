@@ -478,11 +478,11 @@ User-centered design sessions with visually impaired persons provided substantia
 
 The key part of the proposed system is a smartphone device, connecting user interface and data processing components into a well-functioning ecosystem. Smartphone was selected due to its high availability and capability to perform required computations or forward visual information for processing to the external server via the Internet connection.
 
-The cornerstones of the proposed solution are its inferface and external server, capable running computationally demanding vision processing algorithms.
+The cornerstones of the proposed solution are its inferface and external server, capable running computationally demanding modern image processing algorithms.
 
 The interface consists of a wearable forehead belt, integrating RGB and depth cameras, tactile feedback device and bone conductive headphones. Altough more expensive than standard ones, bone conductive headphones allow the user to perceive audio information from the surrounding environment, which is essential for the visually impaired people.
 
-External server processes received visual data according to user request with computer vision algorithms: faster RCNN object detector \cite{Ren}, trained to detect important objects, CNN-RNN-based scene description \cite{Liu}, place recognition \cite{Ohn-Bar}, face recognition \cite{Amos}, obstacle detection \cite{Laina}, and other algorithms, and transmits feedback signal back to the smartphone device for presenting to the user via the above described interface.
+External server processes received visual data according to user request with computer vision algorithms: faster RCNN object detector \cite{Ren}, trained to detect important objects, CNN-RNN-based scene description \cite{Liu}, place recognition \cite{Ohn-Bar}, face recognition \cite{Amos}, obstacle detection \cite{Laina}, among others. After completing an analysis this server transmits feedback signal back to the smartphone device for presenting it to the user via the above described interface.
 
 
 
@@ -506,9 +506,9 @@ External server processes received visual data according to user request with co
 %Results skyrelyje nereiktu taip stipriai fokusuotis i kitu grupiu tyrimus ir juos cituoti. Rezultatai juk musu.
 
 
-Discussions on functionality and key features of the solution revealed a gap between the aims of the existing tools, which are often focused on advanced navigation and scene description features, and actual user needs. The end users highlighted that a simplistic solution for navigating is lacking. 
+Discussions on functionality and key features of the solution revealed a gap between the aims of the existing tools, which are often focused on advanced navigation and scene description features, and actual user needs. For example, the end users highlighted that a simplistic solution for navigating is lacking. 
 %They were not excited about advanced object detection and scene description techniques, which may overcomplicate their daily life. 
-Major focus was put on a easy to use and minimalistic tool, which can be trusted. Object detection, and direction and approximate distance to obstacle were highlighted as major requirements. To our surprise, only 5-8 distinctive object classes (for instance, buss stop, pedestrian crossing, doors, stairs, etc) were of major importance while navigating. Additional information, such as type of a passing car, blossoming flowers in the park or person passing riding a bicycle was considered as overwhelming and distractive. Another important functionality required by end users was navigation aid.
+Major focus was put on a easy to use and minimalistic tool, which can be trusted. Reliable object detection, direction and approximate distance to an obstacle were highlighted as major requirements. To our surprise, only 5-8 distinctive object classes (for instance, buss stop, pedestrian crossing, doors, stairs, etc) were of major importance while navigating. Additional information, such as type of a passing car, blossoming flowers in the park or person passing riding a bicycle was considered as overwhelming and distractive. 
 
 %Social networking functionality was accepted as a potentially important feature allowing other users/volunteers to describe certain objects (for instance, temporary road works) with exact location and description. Navigating around such obstacles can be challenging for computer vision-based tools and may decrease user's trust in the tool. Integration of additional information from other users, governmental organizations and volunteers could be of high value for the visually impaired people. 
 
