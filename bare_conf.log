@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.10)  4 OCT 2018 13:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.10)  4 OCT 2018 13:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -273,13 +273,6 @@ Package pdftex.def Info: ./img/cropped_diagram.pdf used on input line 492.
 
 
 ]
-
-LaTeX Warning: Citation `?' on page  undefined on input line 537.
-
-
-LaTeX Warning: Citation `?' on page  undefined on input line 537.
-
-
 Underfull \hbox (badness 1694) in paragraph at lines 594--595
 \OT1/ptm/m/n/8 D., Botezatu, N., Herghelegiu, P., Moldoveanu, F., Stru-millo, P
 .,
@@ -302,18 +295,15 @@ pdfTeX warning: pdflatex (file ./img/cropped_diagram.pdf): PDF inclusion: inval
 id other resource which is no dict (key 'ProcSets', type <array>); ignored.
 >] (./bare_conf.aux)
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3301 strings out of 493029
- 54923 string characters out of 6136234
+ 3299 strings out of 493029
+ 54914 string characters out of 6136234
  117841 words of memory out of 5000000
- 6829 multiletter control sequences out of 15000+600000
- 33526 words of font info for 63 fonts, out of 8000000 for 9000
+ 6828 multiletter control sequences out of 15000+600000
+ 32419 words of font info for 62 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  37i,7n,39p,1432b,263s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -322,7 +312,7 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
 fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb>
-Output written on bare_conf.pdf (2 pages, 307900 bytes).
+Output written on bare_conf.pdf (2 pages, 306830 bytes).
 PDF statistics:
  50 PDF objects out of 1000 (max. 8388607)
  30 compressed objects within 1 object stream
