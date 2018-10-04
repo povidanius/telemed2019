@@ -371,16 +371,13 @@
 % author names and affiliations
 % use a multiple column layout for up to three different
 % affiliations
-\author{\IEEEauthorblockN{~\\[-0.4ex]\large Michael Shell\\[0.3ex]\normalsize}
-\IEEEauthorblockA{School of Electrical and\\Computer Engineering\\
-Georgia Institute of Technology\\
-Atlanta, Georgia 30332--0250\\
-Email: {\tt ...}}
+\author{\IEEEauthorblockN{~\\[-0.4ex]\large Povilas Daniu\v{s}is\\[0.3ex]\normalsize}
+\IEEEauthorblockA{Vilnius Gediminas Technical University\\
+Vilnius, Lithuania}
 \and
-\IEEEauthorblockN{~\\[-0.4ex]\large Homer Simpson\\[0.3ex]\normalsize}
-\IEEEauthorblockA{Twentieth Century Fox\\
-Springfield, USA\\
-Email: {\tt homer@thesimpsons.com}}
+\IEEEauthorblockN{~\\[-0.4ex]\large Audrius Indriulionis\\[0.3ex]\normalsize}
+\IEEEauthorblockA{Vilnius Gediminas Technical University\\
+Vilnius, Lithuania}
 \and
 \IEEEauthorblockN{~\\[-0.4ex]\large Andrius Budrionis\\[0.3ex]\normalsize}
 \IEEEauthorblockA{Vilnius Gediminas Technical University\\
@@ -426,12 +423,7 @@ Tromsø, Norway}}
 
 \begin{abstract}
 %\boldmath
-The abstract goes here.
-The abstract goes here.
-The abstract goes here.
-The abstract goes here.
-The abstract goes here.
-The abstract goes here.
+In this short article we describe and discuss architecture of computer vision-based system for partial compensation of lost or impaired human vision.
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
 % This preserves the distinction between vectors and scalars. However,
@@ -443,7 +435,7 @@ The abstract goes here.
 % no keywords
 
 \begin{IEEEkeywords}
-Computer vision; Mobile application; Travel aid; Tactile. %
+Computer vision; Mobile application; Aid for blind and visually impaired; Tactile feedback; Impaired human vision compensation.%
 \end{IEEEkeywords}
 
 
@@ -484,14 +476,22 @@ Design process involved testing of the existing mobile phone app (Seeing AI) for
 
 User-centered design sessions with visually impaired persons provided substantial input for the design of the proposed system (Fig.~\ref{fig:schematics}). The process made it clear that understanding of the user needs was limited in the project group. Based on the results of the user-centered design process, we present the outline of the system for impaired human vision compensation. 
 
-The key part of the proposed system is a smartphone device, connecting user interface and data processing components into a well-functioning ecosystem. Smartphone was selected due to its high availability and capability to perform required computations or forward visual information to the external server via the Internet connection. The cornerstone of the proposed solution is a wearable forehead belt, integrating two cameras and a tactile feedback device. Bone conductive headphones are suggested to facilitate audio feedback.
+The key part of the proposed system is a smartphone device, connecting user interface and data processing components into a well-functioning ecosystem. Smartphone was selected due to its high availability and capability to perform required computations or forward visual information for processing to the external server via the Internet connection.
+
+The cornerstones of the proposed solution are its inferface and external server, capable running computationally demanding vision processing algorithms.
+
+The interface consists of a wearable forehead belt, integrating RGB and depth cameras, tactile feedback device and bone conductive headphones. Altough more expensive than standard ones, bone conductive headphones allow the user to perceive audio information from the surrounding environment, which is essential for the visually impaired people.
+
+External server processes received visual data according to user request with computer vision algorithms: faster RCNN object detector \cite{Ren}, trained to detect important objects, CNN-RNN-based scene description \cite{Liu}, place recognition \cite{Ohn-Bar}, face recognition \cite{Amos}, obstacle detection \cite{Laina}, and other algorithms, and transmits feedback signal back to the smartphone device for presenting to the user via the above described interface.
+
+
 
 %\begin{wrapfigure}{r}{0.4\textwidth}
 \begin{figure}
   \begin{center}
     \includegraphics[scale=0.7]{./img/cropped_diagram.pdf}  
   \end{center}
-  \caption{Schematics of FRP device.}
+  \caption{Schematics of vision compensation device.}
   \label{fig:schematics}
 \end{figure}
 
@@ -506,24 +506,26 @@ The key part of the proposed system is a smartphone device, connecting user inte
 %Results skyrelyje nereiktu taip stipriai fokusuotis i kitu grupiu tyrimus ir juos cituoti. Rezultatai juk musu.
 
 
-Discussions on functionality and key features of the solution revealed a gap between the aims of the existing tools, which are often focused on advanced navigation and scene description features, and actual user needs. The end users highlighted that a simplistic solution for navigating is lacking. They were not excited about advanced object detection and scene description techniques, which may overcomplicate their daily life. Major focus was put on a easy to use and minimalistic tool, which can be trusted. Direction and approximate distance to obstacle were highlighted as major requirements. To our surprise, only 5-8 distinctive object classes (for instance, buss stop, pedestrian crossing, doors, stairs, etc) were of major importance while navigating. Additional information, such as type of a passing car, blossoming flowers in the park or person passing riding a bicycle was considered as overwhelming and distractive. 
+Discussions on functionality and key features of the solution revealed a gap between the aims of the existing tools, which are often focused on advanced navigation and scene description features, and actual user needs. The end users highlighted that a simplistic solution for navigating is lacking. 
+%They were not excited about advanced object detection and scene description techniques, which may overcomplicate their daily life. 
+Major focus was put on a easy to use and minimalistic tool, which can be trusted. Object detection, and direction and approximate distance to obstacle were highlighted as major requirements. To our surprise, only 5-8 distinctive object classes (for instance, buss stop, pedestrian crossing, doors, stairs, etc) were of major importance while navigating. Additional information, such as type of a passing car, blossoming flowers in the park or person passing riding a bicycle was considered as overwhelming and distractive. Another important functionality required by end users was navigation aid.
 
-Social networking functionality was accepted as a potentially important feature allowing other users/volunteers to describe certain objects (for instance, temporary road works) with exact location and description. Navigating around such obstacles can be challenging for computer vision-based tools and may decrease user's trust in the tool. Integration of additional information from other users, governmental organizations and volunteers could be of high value for the visually impaired people. 
+%Social networking functionality was accepted as a potentially important feature allowing other users/volunteers to describe certain objects (for instance, temporary road works) with exact location and description. Navigating around such obstacles can be challenging for computer vision-based tools and may decrease user's trust in the tool. Integration of additional information from other users, governmental organizations and volunteers could be of high value for the visually impaired people. 
 
 %Povilai, paziurek ar cia viskas OK, pridek ka nors nuo saves
-Computer vision technology is under rapid development and during last years made major breakthrough in performance and efficiency. Deep learning neural networks, which are de facto standard in modern image/video processing, are now well supported by software libraries and dedicated hardware built-in even in relatively low-power computational devices, such as smartphones. These devices are equipped with high-quality cameras, 4G Internet connectivity and sufficient computational power to perform initial data processing locally. The maturity of the aforementioned technologies suggest that our proposed computational aid for visually impaired persons may be highly feasible. 
+Computer vision technology is under rapid development and during last years made major breakthrough in performance and efficiency. Deep learning neural networks, which are de facto standard in modern image/video processing, are now well supported by software libraries and dedicated hardware built-in even in relatively low-power computational devices, such as smartphones. These devices are also equipped with 4G Internet connectivity and sufficient computational power to perform initial data processing locally. The maturity of the aforementioned technologies suggest that our proposed computational aid for visually impaired persons may be highly feasible. 
 
 
 The cornerstone of this project is the interface between the visually impaired person and the assistive technology. We are proposing a combination of audio and tactile feedback, which may improve the interaction between the assitive technology and the user. Similar interfaces were suggested by research communities earlier \cite{Zientara}, \cite{Poggi}, however, current knowledge on user preferences and evaluation of various options of tactile feedback (placement on the body, frequencies, strength, etc.) is limited. 
 
-Appearance, usability and cost of the final solution is of major importance to the users. The proposed assistive technology should replace/supplement the tool that visually impaired persons used for decades - the white cane. Using a white cane requires little to none training, has very low costs and is relatively reliable. It provides information on the surrounding objects 1-2 meters in front of the user. While the cane can used to detect a nearby obstacle, electronic travel aid could be beneficial for longer range (10-20m) route planning and object recognition. However, it should integrate seamlessly into the existing navigation practices of visually impaired people. 
+Appearance, usability and cost of the final solution is of major importance to the users. The proposed assistive technology should supplement the tool that visually impaired persons used for decades - the white cane. Using a white cane requires little to none training, has very low costs and is relatively reliable. It provides information on the surrounding objects 1-2 meters in front of the user. While the cane can used to detect a nearby obstacle, electronic travel aid could be beneficial for longer range (10-20m) route planning and object recognition. However, it should integrate seamlessly into the existing navigation practices of visually impaired people. 
 
 
  
 
 %The proposed system  consists of three major parts: is a computational device the user currently uses for completing other daily tasks. It consists of sensors and actuators, integrated into smartphone-based computational core, which was chosen due its avialability to wide population, and capability to perform the required computations or forward visual information to the external server via the Internet connection. Sensors are mounted on forehead belt include: RGB camera, depth camera, IMU. Actuator set consists of bone conductive headphones, and head belt for presenting tactile-feedback to the user. %We suggest to use bone conductive headphones, ... 
 
-%\textbf{Inference} subsystem consists of server computer with internet connection and set of computer vision algorithms, selected according to our methodology (see. Sec.~\ref{sec:method}): Faster RCNN object detector \cite{?}, trained to detect important objects (doors, floors, elevators, stairs, corridor junctions, etc.), CNN-RNN-based scene description \cite{Liu},\cite{Ren}, \cite{Dai}, place recognition \cite{Ohn-Bar}, face recognition \cite{Amos}, obstacle detection \cite{Laina}, and possibly other modules. 
+%\textbf{Inference} subsystem consists of server computer with internet connection and set of computer vision algorithms, selected according to our methodology ed (see. Sec.~\ref{sec:method}): Faster RCNN object detector \cite{?}, trainto detect important objects (doors, floors, elevators, stairs, corridor junctions, etc.), CNN-RNN-based scene description \cite{Liu},\cite{Ren}, \cite{Dai}, place recognition \cite{Ohn-Bar}, face recognition \cite{Amos}, obstacle detection \cite{Laina}, and possibly other modules. 
 
 %HVCS operation cycle is started by \textbf{Device} reading sensor data and transmitting it to the server for an analysis. Server calculates feedback signal and transmits it back to the device for presenting to the user.
 
@@ -532,7 +534,9 @@ Appearance, usability and cost of the final solution is of major importance to t
 %Didzioji Discussion teksto dalis man labiau tinka prie Results/Conclusion. Gal galim padiskutioti daugiau apie Limitations, Future Implications, Lessons Learned ar pan... Cia galime savo siuloma sistema lyginti su anksciau publikuotais rezultatais. 
 
 
-In this article we outlined an idea of complex computer vision-based sensor architecture, which can help to partially compensate impaired or lost human sight. Main improvements comparing to similar previous work (\cite{?}, \cite{?}) is: ability to use efficient (but still computationally intensive) modern computer vision algorithms via Internet connection, present the signal to the user by combined bone conductive headphone-tactile actuator, low cost and consequently increased potential availability of the device. Suggested architecture can be used as basis for various computer vision-based systems, allowing to help visually impaired users in everyday routines (e.g. outdoor/indoor navigation,...). On the other side, due to remotelly carried visual analysis, in some cases the suggested system may suffer from too large latency, its reliability depends on stability and quality of Internet connection. Such a problem partially may be solved in near future, when 5G networks will prevail.
+In this article we outlined an idea of complex computer vision-based sensor architecture, which can help to partially compensate impaired or lost human sight. Main improvements comparing to similar previous work (\cite{?}, \cite{?}) are: ability to use efficient (but still computationally intensive) modern computer vision algorithms via Internet connection, present the signal to the user by combined bone conductive headphone-tactile actuator, low cost and consequently increased potential availability of the device. The suggested system integrates well with the main blind person's aid - the white cane. The hardware architecture can be used as the basis for various computer vision-based software modules, allowing to help visually impaired users in everyday routines (e.g. outdoor/indoor navigation, object/face recognition, obstacle detection, navigation). On the other side, due to remotelly carried visual analysis, in some cases the suggested system may suffer from too large latency, its reliability depends on stability and quality of Internet connection. 
+
+%Such a problem partially may be solved in near future, when 5G networks will prevail.
 
 
 %The developed head-mounted tactile device is developed for head position and orientation tracking and could capture an image in front of visually impaired people. The tactile device with integrated 3D deph camera is integrated with smartphone by bluetooth which could preprocess the labeled image features. The developed high quality self navigation system is based on the computer vision methods especially enhancing the capabilities to detect and classify objects (e.g bus station, street crossings, ) with their surrounding objects. The authors expect to increase the capabilies of potentially blind to secure navigate especially for the planed destination (e.g. "home-office"). Work left (outdoor/indoor) etc.
@@ -589,7 +593,7 @@ A general-purpose face recognition library with mobile applications. Technical r
 
 \bibitem{Caraiman} Caraiman, S., Morar, A., Owczarek, M.,Burlacu, A., Rzeszotarski, D., Botezatu, N., Herghelegiu, P., Moldoveanu, F., Strumillo, P., Moldoveanu, A. Computer Vision for the Visually Impaired: the Sound of Vision System. IEEE International Conference on Computer Vision Workshops, pp. 1480-1489, 2017.
 \bibitem{Csapo} Csap\'{o}, A., Wers\'{e}nyi, G., Nagy, H., Stockman, T. A survey of assistive technologies and applications for blind users on mobile platforms: a review and foundation for research. Journal on Multimodal User Interfaces. Vol. 9, issule 4,  pp. 275-286, 2015.
-\bibitem{Dai} Dai, J., Li, Y., He, K., Sun J. R-FCN: Object Detection via Region-based Fully Convolutional Networks. In Advances in neural information processing systems, pp. 379-387, 2016.
+%\bibitem{Dai} Dai, J., Li, Y., He, K., Sun J. R-FCN: Object Detection via Region-based Fully Convolutional Networks. In Advances in neural information processing systems, pp. 379-387, 2016.
 \bibitem{Poggi} Poggi, M., Mattoccia, S. A wearable mobility aid for the visually impaired based on embedded 3d vision and deep learning. Proceeding of IEEE Symposium on Compututers and Communication, pp. 208-213, 2016.
 \bibitem{Zientara} Zientara, P.,A., Lee, S., Smith, G., H., Brenner, R., Itti, L., Rosson M., B., Carroll, J., M., Irick K., M., Narayanan, V. Third Eye: A shopping assistant for the visually impaired. Computer Vol. 50, Issue 2, pp. 16-24, 2017.
 \bibitem{Liu} Liu, Ch., Mao, J., Sha, F., Yuille, A. Attention Correctness in Neural Image Captioning. Proceedings of the Thirty-First AAAI Conference on Artificial Intelligence, pp. 4176-4182, 2017.
