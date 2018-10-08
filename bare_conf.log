@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.10)  4 OCT 2018 21:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.30)  8 OCT 2018 11:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -263,17 +263,22 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: ./img/cropped_diagram.pdf Graphic file (type pdf)
 
 <use ./img/cropped_diagram.pdf>
-Package pdftex.def Info: ./img/cropped_diagram.pdf used on input line 492.
+Package pdftex.def Info: ./img/cropped_diagram.pdf used on input line 495.
 (pdftex.def)             Requested size: 164.41312pt x 149.6581pt.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Underfull \hbox (badness 1694) in paragraph at lines 593--594
+Underfull \hbox (badness 1694) in paragraph at lines 600--601
 \OT1/ptm/m/n/8 D., Botezatu, N., Herghelegiu, P., Moldoveanu, F., Stru-millo, P
 .,
  []
 
+[2 <./img/cropped_diagram.pdf
+
+pdfTeX warning: pdflatex (file ./img/cropped_diagram.pdf): PDF inclusion: inval
+id other resource which is no dict (key 'ProcSets', type <array>); ignored.
+>]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -285,29 +290,27 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[2 <./img/cropped_diagram.pdf
+[3
 
-pdfTeX warning: pdflatex (file ./img/cropped_diagram.pdf): PDF inclusion: inval
-id other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] (./bare_conf.aux) ) 
+] (./bare_conf.aux) ) 
 Here is how much of TeX's memory you used:
  3299 strings out of 493029
  54913 string characters out of 6136234
- 117801 words of memory out of 5000000
+ 117799 words of memory out of 5000000
  6828 multiletter control sequences out of 15000+600000
  32419 words of font info for 62 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 37i,7n,39p,1530b,263s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.en
-c}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/urw/times/utmr8a.pfb>
-Output written on bare_conf.pdf (2 pages, 306753 bytes).
+ 37i,7n,39p,1596b,263s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc
+}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/urw/times/utmr8a.pfb>
+Output written on bare_conf.pdf (3 pages, 307719 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+ 53 PDF objects out of 1000 (max. 8388607)
+ 32 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

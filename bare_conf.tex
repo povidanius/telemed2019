@@ -482,7 +482,7 @@ The key part of the proposed system is a smartphone device, connecting user inte
 
 %The cornerstones of the proposed solution are its inferface and external server, capable running computationally demanding modern image processing algorithms.
 
-User interface consists of a wearable forehead belt, integrating RGB and depth cameras, tactile feedback device and bone conductive headphones. Although more expensive than standard ones, bone conductive headphones do not block the ears and allow the user to perceive audio information from the surrounding environment, which is essential for the visually impaired people.
+User interface consists of a wearable forehead belt, integrating RGB and depth cameras, tactile feedback device and bone conduction headphones. Although more expensive than standard ones, bone conduction headphones do not block the ears and allow the user to perceive audio information from the surrounding environment, which is essential for the visually impaired people.
 
 %visus sutrumpinimus reikia pirma parasyt pilnai, pvz Neural Network (NN)
 External server processes visual data employing a set of computer vision algorithms: faster RCNN object detector \cite{Ren}, trained to detect important objects, CNN-RNN-based scene description \cite{Liu}, place recognition \cite{Ohn-Bar}, face recognition \cite{Amos}, obstacle detection \cite{Laina}, among others. After completing the analysis results are transmitted back to the smartphone and represented to the user through the aforementioned interface.
@@ -525,20 +525,13 @@ Appearance, usability and cost of the end product are of major importance to the
 
 
  
-
-%The proposed system  consists of three major parts: is a computational device the user currently uses for completing other daily tasks. It consists of sensors and actuators, integrated into smartphone-based computational core, which was chosen due its avialability to wide population, and capability to perform the required computations or forward visual information to the external server via the Internet connection. Sensors are mounted on forehead belt include: RGB camera, depth camera, IMU. Actuator set consists of bone conductive headphones, and head belt for presenting tactile-feedback to the user. %We suggest to use bone conductive headphones, ... 
-
-%\textbf{Inference} subsystem consists of server computer with internet connection and set of computer vision algorithms, selected according to our methodology ed (see. Sec.~\ref{sec:method}): Faster RCNN object detector \cite{?}, trainto detect important objects (doors, floors, elevators, stairs, corridor junctions, etc.), CNN-RNN-based scene description \cite{Liu},\cite{Ren}, \cite{Dai}, place recognition \cite{Ohn-Bar}, face recognition \cite{Amos}, obstacle detection \cite{Laina}, and possibly other modules. 
-
-%HVCS operation cycle is started by \textbf{Device} reading sensor data and transmitting it to the server for an analysis. Server calculates feedback signal and transmits it back to the device for presenting to the user.
-
 \section{Discussion}
 \label{sec:discussion}
 %Didzioji Discussion teksto dalis man labiau tinka prie Results/Conclusion. Gal galim padiskutioti daugiau apie Limitations, Future Implications, Lessons Learned ar pan... Cia galime savo siuloma sistema lyginti su anksciau publikuotais rezultatais. 
 
 
 In this article we outlined an idea of complex computer vision-based sensor architecture, which may help to partially compensate impaired or lost human sight. Main advantages of therein suggested system are: ability to use efficient (but still computationally intensive) modern computer vision algorithms via the Internet connection, present the output of video processing to the user through a combined audio/tactile interface. 
-%bone conductive headphone-tactile actuator, comparatively low cost and consequently increased potential availability of the device. 
+%bone conduction headphone-tactile actuator, comparatively low cost and consequently increased potential availability of the device. 
 The suggested system does not aim to replace the main travelling aid of visually impaired people - the white cane. Instead, this computer vision tool aims to push the perception of the surounding environment boundary from 1-2 meters (achieved by using the white cane) to 2-10 meters. It may improve route planning and identification of objects of interest (for instance, doors, stairs, elevators, bus stopps, etc.). This functionality corresponds with the main requirement for electronic travelling aids identified by the end users - direction and distance estimation to a selected object. The proposed hardware architecture can be used as a basis for various computer vision-based software modules, aiming to assist visually impaired users in daily activities (e.g. outdoor/indoor navigation, object/face recognition, obstacle detection, etc.). 
 
 The proposed architecture is based on several assumptions, which may be characterized as limitations of the system. Technical feasibility of the solution is dependent on the availability of high bandwidth Internet connection ensuring access to high-power data processing components. Insuficient bandwidth may result in latency, which may not be tolerated by the users.  
@@ -546,7 +539,7 @@ The proposed architecture is based on several assumptions, which may be characte
 %Andrius: galima butu paminet limited knowledge on tactile interfaces for navigation purposes, placement, frequences, strenths, etc... 
 
 
-Economical feasibility of the proposed solution may also be questioned. Advanced technology (high-end smartphone, depth camera, tactile feedback device, bone conductive headphones) is needed to ensure reliable functioning of the system. A combination of such components may be perceived as costly by the end users. More research is needed to demonstrate the benefits of the system in real-world scenarios. 
+Economical feasibility of the proposed solution may also be questioned. Advanced technology (high-end smartphone, depth camera, tactile feedback device, bone conduction headphones) is needed to ensure reliable functioning of the system. A combination of such components may be perceived as costly by the end users. More research is needed to demonstrate the benefits of the system in real-world scenarios. 
 
 %On the other side, due to remotelly conducted visual analysis, in some cases the suggested system may suffer from too large latency, its reliability depends on stability and quality of Internet connection. We are currently  implementing suggested the architecture into working prototype for preliminary evaluation by potential end users.
 
@@ -631,8 +624,6 @@ A general-purpose face recognition library with mobile applications. Technical r
 
 \bibitem{Zientara} Zientara, P.,A., Lee, S., Smith, G., H., Brenner, R., Itti, L., Rosson M., B., Carroll, J., M., Irick K., M., Narayanan, V. Third Eye: A shopping assistant for the visually impaired. Computer Vol. 50, Issue 2, pp. 16-24, 2017.
 
-
-%\bibitem{Poggi} Poggi, M., Mattoccia, S. A wearable mobility aid for the visually impaired based on embedded 3D vision and deep learning. 2016 IEEE Symposium on Computers and Communication (ISCC), 2016
 
 \end{thebibliography}
 
