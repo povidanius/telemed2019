@@ -371,27 +371,25 @@
 % author names and affiliations
 % use a multiple column layout for up to three different
 % affiliations
-\author{\IEEEauthorblockN{~\\[-0.4ex]\large Povilas Daniu\v{s}is\\[0.3ex]\normalsize}
-\IEEEauthorblockA{Vilnius Gediminas Technical University\\
-Vilnius, Lithuania}
-\and
-\IEEEauthorblockN{~\\[-0.4ex]\large Audrius Indriulionis\\[0.3ex]\normalsize}
-\IEEEauthorblockA{Vilnius Gediminas Technical University,\\
-Nature Research Center, Vilnius, Lithuania}
-
-\and
-\IEEEauthorblockN{~\\[-0.4ex]\large Andrius Budrionis\\[0.3ex]\normalsize}
-\IEEEauthorblockA{Vilnius Gediminas Technical University\\
-Vilnius, Lithuania\\
-Norwegian Centre for E-health Research\\
-University Hospital of North Norway\\
-Tromsø, Norway}
-
-\and
-\author{\IEEEauthorblockN{~\\[-0.4ex]\large Darius Plikynas\\[0.3ex]\normalsize}
-\IEEEauthorblockA{Vilnius Gediminas Technical University\\
-Vilnius, Lithuania}
-}
+%\author{\IEEEauthorblockN{~\\[-0.4ex]\large Povilas Daniu\v{s}is\\[0.3ex]\normalsize}
+%\IEEEauthorblockA{Vilnius Gediminas Technical University\\
+%Vilnius, Lithuania}
+%\and
+%\IEEEauthorblockN{~\\[-0.4ex]\large Audrius Indriulionis\\[0.3ex]\normalsize}
+%\IEEEauthorblockA{Vilnius Gediminas Technical University,\\
+%Nature Research Center, Vilnius, Lithuania}
+%\and
+%\IEEEauthorblockN{~\\[-0.4ex]\large Andrius Budrionis\\[0.3ex]\normalsize}
+%\IEEEauthorblockA{Vilnius Gediminas Technical University\\
+%Vilnius, Lithuania\\
+%Norwegian Centre for E-health Research\\
+%University Hospital of North Norway\\
+%Tromsø, Norway}
+%\and
+%\author{\IEEEauthorblockN{~\\[-0.4ex]\large Darius Plikynas\\[0.3ex]%\normalsize}
+%\IEEEauthorblockA{Vilnius Gediminas Technical University\\
+%Vilnius, Lithuania}
+%}}
 
 % conference papers do not typically use \thanks and this command
 % is locked out in conference mode. If really needed, such as for
@@ -401,19 +399,18 @@ Vilnius, Lithuania}
 % for over three affiliations, or if they all won't fit within the width
 % of the page, use this alternative format:
 % 
-%\author{\IEEEauthorblockN{Michael Shell\IEEEauthorrefmark{1},
-%Homer Simpson\IEEEauthorrefmark{2},
-%James Kirk\IEEEauthorrefmark{3}, 
-%Montgomery Scott\IEEEauthorrefmark{3} and
-%Eldon Tyrell\IEEEauthorrefmark{4}}
-%\IEEEauthorblockA{\IEEEauthorrefmark{1}School of Electrical and Computer Engineering\\
-%Georgia Institute of Technology,
-%Atlanta, Georgia 30332--0250\\ Email: see http://www.michaelshell.org/contact.html}
-%\IEEEauthorblockA{\IEEEauthorrefmark{2}Twentieth Century Fox, Springfield, USA\\
-%Email: homer@thesimpsons.com}
-%\IEEEauthorblockA{\IEEEauthorrefmark{3}Starfleet Academy, San Francisco, California 96678-2391\\
-%Telephone: (800) 555--1212, Fax: (888) 555--1212}
-%\IEEEauthorblockA{\IEEEauthorrefmark{4}Tyrell Inc., 123 Replicant Street, Los Angeles, California 90210--4321}}
+\author{\IEEEauthorblockN{Povilas Daniu\v{s}is\IEEEauthorrefmark{1},
+Audrius Indriulionis\IEEEauthorrefmark{1}\IEEEauthorrefmark{3},
+Andrius Budrionis\IEEEauthorrefmark{1}\IEEEauthorrefmark{2} and 
+Darius Plikynas\IEEEauthorrefmark{1}}
+\IEEEauthorblockA{\IEEEauthorrefmark{1}Vilnius Gediminas Technical University,\\
+Vilnius, Lithuania.
+}
+\IEEEauthorblockA{\IEEEauthorrefmark{2}Norwegian Centre for E-health Research, University Hospital of North Norway,\\
+Troms\o, Norway.}
+\IEEEauthorblockA{\IEEEauthorrefmark{3}Nature Research Center,\\ 
+Vilnius, Lithuania.
+}}
 
 
 
@@ -461,7 +458,7 @@ Computer vision; Mobile application; Aid for blind and visually impaired; Tactil
 \section{Introduction}
 \label{sec:introduction}
 
-More than $250$ million people worldwide have moderate to severe vision impairment, while ($\approx 36$ million are blind) \cite{Bourne}. During the past decades significant effort was devoted to develop computer vision and other sensor based aids (e.g. \cite{Caraiman}, \cite{Csapo}, \cite{Poggi}, \cite{Zientara}) for helping the blind and visually impaired users to better perceive the surrounding world. However, computer vision is a rapidly evolving field; systems based on the aforementioned approaches become outdated in a relitively short time and often lack accuracy and reliability in real-world conditions in comparisson to the state-of-the-art technologies. In this article we describe a system, which employs modern computer vision techniques for compensation of lost or impaired vision function in humans. Many of the previously proposed electronic aids for the blind count on highly specialized hardware, for instance smart glasses \cite{Zientara}, Microsoft Kinnect sensors \cite{Owayjan}, helmet-mounted photo sensors and cameras \cite{Dunai}. Such systems often lack convenience and bring additional complexity into daily tasks, which visually impaired people currently manage by the help of a white cane. This project puts major emphasis on developing a tool, which seamlessly integrates with the hardware visually impaired persons already have on-hand and is used to (smartphone). This paper describes a high level architecture of the technology aid for visually impaired people utilising the latest achievemets in the field of computer vision. 
+More than $250$ million people worldwide have moderate to severe vision impairment, while ($\approx 36$ million are blind) \cite{Bourne}. During the past decades significant effort was devoted to develop computer vision and other sensor based aids (e.g. \cite{Caraiman}, \cite{Csapo}, \cite{Poggi}, \cite{Zientara}) for helping the blind and visually impaired users to better perceive the surrounding world. However, computer vision is a rapidly evolving field; systems based on the aforementioned approaches become outdated in a relitively short time and often lack accuracy and reliability in real-world conditions in comparisson to the state-of-the-art technologies. In this article we describe a system, which employs modern computer vision techniques for compensation of lost or impaired vision function in humans. Many of the previously proposed electronic aids for the blind count on highly specialized hardware, for instance smart glasses \cite{Zientara}, Microsoft Kinnect sensors \cite{Owayjan}, helmet-mounted photo sensors and cameras \cite{Dunai}. Such a systems often lack convenience and bring additional complexity into daily tasks, which visually impaired people currently manage by the help of a white cane. This project puts major emphasis on developing a tool, which seamlessly integrates with the hardware visually impaired persons already have on-hand and is used to (smartphone). This paper describes a high level architecture of the technology aid for visually impaired people utilising the latest achievemets in the field of computer vision. 
 %(kartojasi su In this article we describe a system, which employs modern computer vision ...)
 %Andrius: nieko tokio, jei sakinys kartojasi Abstract'e. Sitai pastraipai reikia concluding sentence. Aisku galima ji perfrazuot kaip nors kitaip. 
 
@@ -487,33 +484,27 @@ User-centered design sessions with visually impaired persons provided substantia
 
 The key part of the proposed system is a smartphone device, connecting user interface and data processing components into a well-functioning ecosystem. Smartphone was selected due to its high availability and capability to perform required computations or forward visual information for processing to the external server via the Internet connection.
 
-%The cornerstones of the proposed solution are its inferface and external server, capable running computationally demanding modern image processing algorithms.
+% Man atrodo, kad cia du svarbiausi punktai, kuriuos reiktu akcentuoti.
+The cornerstones of the proposed solution are its user inferface and external vision processor - server, capable of running computationally demanding modern computer vision algorithms.
 
+% User interface
 User interface consists of a wearable forehead belt, integrating RGB and depth cameras, tactile feedback device and bone conduction headphones. Although more expensive than standard ones, bone conduction headphones do not block the ears and allow the user to perceive audio information from the surrounding environment, which is essential for the visually impaired people.
 
+% External vision processor
 %visus sutrumpinimus reikia pirma parasyt pilnai, pvz Neural Network (NN)
-External server processes visual data employing a set of computer vision algorithms: faster RCNN object detector \cite{Ren}, trained to detect important objects, CNN-RNN-based scene description \cite{Liu}, place recognition \cite{Ohn-Bar}, face recognition \cite{Amos}, obstacle detection \cite{Laina}, among others. After completing the analysis results are transmitted back to the smartphone and represented to the user through the aforementioned interface.
+External server processes visual data employing a set of computer vision algorithms, selected according to our method (see Sec.~\ref{sec:method}): faster regions with convolutional neural network features (faster R-CNN) object detector \cite{Ren}, trained to detect important objects, convolutional and recurrent neural network (CNN and RNN)-based scene description \cite{Liu}, place recognition \cite{Ohn-Bar}, face recognition \cite{Amos}, obstacle detection \cite{Laina}, among others. After completing the analysis results are transmitted back to the smartphone and represented to the user through the aforementioned interface.
 
 
 
 %\begin{wrapfigure}{r}{0.4\textwidth}
 \begin{figure}
   \begin{center}
-    \includegraphics[scale=0.7]{./img/cropped_diagram.pdf}  
+    \includegraphics[scale=0.9]{./img/cropped_diagram.pdf}  
   \end{center}
   \caption{Schematics of vision compensation device.}
   \label{fig:schematics}
 \end{figure}
 
-
-
-%\end{wrapfigure}
-
-%Following the above methodology we suggest the impaired human vision compensation system (\textbf{HVCS}), consisting of \textbf{Device} and \textbf{Inference} components (see Fig.~\ref{fig:schematics}).
-
-%padalijimas i 2 komponentus man nelabai aiskus. As dalinciau i input (kameros, sensoriai), output (ausines, vibratoriu matricos), processing (local, remote). 
-% tai kas dabar yra prie Inference, siulau perfrazuot kaip Functionality, ka as minejau Method. Taip pat visa Results skyreli reiktu labiau susiet su Method. Reiktu, kad visi 4 Method pamineti punktai isrysketu ir Results. 
-%Results skyrelyje nereiktu taip stipriai fokusuotis i kitu grupiu tyrimus ir juos cituoti. Rezultatai juk musu.
 
 
 Discussions on functionality and key features of the solution revealed a gap between the aims of the existing tools, which are often focused on advanced navigation and scene description features, and actual user needs. For example, the end users highlighted that a simplistic solution for navigating is lacking. 
