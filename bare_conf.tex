@@ -427,7 +427,7 @@ Vilnius, Lithuania.
 
 \begin{abstract}
 %\boldmath
-In this short article we describe and discuss architecture of computer vision-based system for partial compensation of lost or impaired human vision.
+In this short article we describe and discuss high level architecture of computer vision-based system for partial compensation of lost or impaired human vision.
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
 % This preserves the distinction between vectors and scalars. However,
@@ -482,24 +482,24 @@ Design process involved testing of the existing mobile phone app (Seeing AI) for
 
 User-centered design sessions with visually impaired persons provided substantial input for the design of the proposed system (Fig.~\ref{fig:schematics}). The process made it clear that understanding of the user needs was limited in the project team. Based on the results of the user-centered design process, we present the outline of the system for impaired human vision compensation. 
 
-The key part of the proposed system is a smartphone device, connecting user interface and data processing components into a well-functioning ecosystem. Smartphone was selected due to its high availability and capability to perform required computations or forward visual information for processing to the external server via the Internet connection.
+The key part of the proposed system is a smartphone device, connecting user interface (UI) and data processing components into a well-functioning ecosystem. Smartphone was selected due to its high availability and capability to perform required computations or forward visual information for processing to the external server via the Internet connection.
 
-% Man atrodo, kad cia du svarbiausi punktai, kuriuos reiktu akcentuoti.
-The cornerstones of the proposed solution are its user inferface and external vision processor - server, capable of running computationally demanding modern computer vision algorithms.
+% Man atrodo, kad cia du esminiai sistemos komponentai, kuriuos reiktu akcentuoti:
+The cornerstones of the proposed solution are its user interface and vision processing system, consisting of external server, equipped with a set of computer vision algorithms, selected and combined according to the above methodology.
 
 % User interface
-User interface consists of a wearable forehead belt, integrating RGB and depth cameras, tactile feedback device and bone conduction headphones. Although more expensive than standard ones, bone conduction headphones do not block the ears and allow the user to perceive audio information from the surrounding environment, which is essential for the visually impaired people.
+User interface consists of a wearable forehead belt, integrating RGB and depth cameras, inertial measurement unit (IMU), tactile feedback device and bone conduction headphones. Although more expensive than standard ones, bone conduction headphones do not block the ears and allow the user to perceive audio information from the surrounding environment, which is essential for the visually impaired people. Additionally, tactile actuators may improve the quality of users perception (e.g. by indicating the direction of detected object with vibromotor in the corresponding direction on the forehead, instead of providing longer and less convenient to perceive text-to-speach description of the event). UI can interface smartphone component via USB or Wifi connection.
 
 % External vision processor
 %visus sutrumpinimus reikia pirma parasyt pilnai, pvz Neural Network (NN)
-External server processes visual data employing a set of computer vision algorithms, selected according to our method (see Sec.~\ref{sec:method}): faster regions with convolutional neural network features (faster R-CNN) object detector \cite{Ren}, trained to detect important objects, convolutional and recurrent neural network (CNN and RNN)-based scene description \cite{Liu}, place recognition \cite{Ohn-Bar}, face recognition \cite{Amos}, obstacle detection \cite{Laina}, among others. After completing the analysis results are transmitted back to the smartphone and represented to the user through the aforementioned interface.
+Although modern high-end smartphones contain quite powerful computers inside, many computer vision algorithms often demand hardware of significantly higher computational capacity (e.g. server with graphics processing unit (GPU)). This motivates us to employ external server for vision data processing. In our design we assume such a server with a set of computer vision algorithms implemented and exposed via web services: faster regions with convolutional neural network features (faster R-CNN) object detector \cite{Ren}, trained to detect important objects, convolutional and recurrent neural network (CNN and RNN)-based scene description \cite{Liu}, which provides textual annotation of a given RGB image, place recognition \cite{Ohn-Bar}, face detection and recognition \cite{Amos}, obstacle detection \cite{Laina}, among others. After completing the analysis it's results are transmitted back to the smartphone component and represented to the user through the aforementioned interface.
 
 
 
 %\begin{wrapfigure}{r}{0.4\textwidth}
 \begin{figure}
   \begin{center}
-    \includegraphics[scale=0.9]{./img/cropped_diagram.pdf}  
+    \includegraphics[scale=1.0]{./img/cropped_diagram.pdf}  
   \end{center}
   \caption{Schematics of vision compensation device.}
   \label{fig:schematics}
@@ -514,10 +514,11 @@ Major focus was put on a easy to use and minimalistic tool, which can be trusted
 %Social networking functionality was accepted as a potentially important feature allowing other users/volunteers to describe certain objects (for instance, temporary road works) with exact location and description. Navigating around such obstacles can be challenging for computer vision-based tools and may decrease user's trust in the tool. Integration of additional information from other users, governmental organizations and volunteers could be of high value for the visually impaired people. 
 
 %Povilai, paziurek ar cia viskas OK, pridek ka nors nuo saves
+% Pamineti mobilenet ir pan.
 Computer vision technology is under rapid development and during the last years made a major breakthrough in performance and efficiency. Deep learning neural networks, which are de facto standard in modern image/video processing, are now well supported by software libraries and dedicated processing hardware is built-in even in relatively low-power computational devices, such as smartphones. These devices are also equipped with 4G Internet connectivity and sufficient computational power to perform initial data processing locally. The maturity of the aforementioned technologies suggest that our proposed computational aid for visually impaired persons may be highly feasible. 
 
 
-The cornerstone of this project is the interface between the visually impaired person and the assistive technology. We are proposing a combination of audio and tactile feedback, which may improve the interaction between the assistive technology and the user. Similar interfaces were suggested by research communities earlier \cite{Zientara}, \cite{Poggi}, however, existing knowledge on user preferences and evaluation of various options of tactile feedback (placement on the body, frequencies, strength, etc.) is limited. 
+The cornerstone of this project is the interface between the visually impaired person and the assistive technology. We are proposing a combination of audio and tactile feedback, which may improve the interaction between the assistive technology and the user. Similar interfaces were suggested by research communities earlier \cite{Zientara}, \cite{Poggi}, however, existing knowledge on user preferences and evaluation of various options of tactile feedback (types of actuators, placement on the body, frequencies, strength, etc.) is limited. 
 
 Appearance, usability and cost of the end product are of major importance to the users. The proposed assistive technology should supplement the tool that visually impaired persons used for decades - the white cane. Using a white cane requires little to none training, has very low costs and is relatively reliable. It provides information on the surrounding objects 1-2 meters in front of the user. While the cane can used to detect a nearby obstacle, electronic travel aid could be beneficial for longer range (2-10m) route planning and object detection. However, it should integrate seamlessly into the existing navigation practices of visually impaired people. 
 
@@ -530,7 +531,9 @@ Appearance, usability and cost of the end product are of major importance to the
 
 In this article we outlined an idea of complex computer vision-based sensor architecture, which may help to partially compensate impaired or lost human sight. Main advantages of therein suggested system are: ability to use efficient (but still computationally intensive) modern computer vision algorithms via the Internet connection, present the output of video processing to the user through a combined audio/tactile interface. 
 %bone conduction headphone-tactile actuator, comparatively low cost and consequently increased potential availability of the device. 
-The suggested system does not aim to replace the main travelling aid of visually impaired people - the white cane. Instead, this computer vision tool aims to push the perception of the surounding environment boundary from 1-2 meters (achieved by using the white cane) to 2-10 meters. It may improve route planning and identification of objects of interest (for instance, doors, stairs, elevators, bus stopps, etc.). This functionality corresponds with the main requirement for electronic travelling aids identified by the end users - direction and distance estimation to a selected object. The proposed hardware architecture can be used as a basis for various computer vision-based software modules, aiming to assist visually impaired users in daily activities (e.g. outdoor/indoor navigation, object/face recognition, obstacle detection, etc.). 
+The suggested system does not aim to replace the main travelling aid of visually impaired people - the white cane. Instead, this computer vision tool aims to enhance and push the perception of the surounding environment boundary from 1-2 meters (achieved by using the white cane) to 2-10 meters. It may improve route planning and identification of objects of interest (for instance, doors, stairs, elevators, bus stopps, etc.). This functionality corresponds with the main requirement for electronic travelling aids identified by the end users - direction and distance estimation to a selected object. The proposed hardware architecture can be used as a basis for various computer vision-based software modules, aiming to assist visually impaired users in daily activities (e.g. outdoor/indoor navigation, object/face recognition, obstacle detection, etc.). 
+
+%Detalisation of algorithms
 
 The proposed architecture is based on several assumptions, which may be characterized as limitations of the system. Technical feasibility of the solution is dependent on the availability of high bandwidth Internet connection ensuring access to high-power data processing components. Insuficient bandwidth may result in latency, which may not be tolerated by the users.  
 
@@ -627,6 +630,8 @@ This research is/was funded by the European Regional Development Fund according 
 A general-purpose face recognition library with mobile applications. Technical report, CMU-CS-16-118, CMU School of Computer Science, 2016.
 
 \bibitem{Laina} Laina, I., Rupprecht, C., Belagiannis, V., Tombari, F., Navab, N. Deeper depth prediction with fully convolutional residual networks. Fourth International Conference on 3D Vision (3DV), pp. 239-248, 2016.
+
+%\bibitem{Verilook} \url{http://www.neurotechnology.com}
 
 
 
