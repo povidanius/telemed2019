@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.30)  9 OCT 2018 13:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.10)  11 OCT 2018 22:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -268,16 +268,21 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 425.
 
-<./img/cropped_diagram.pdf, id=1, 234.8775pt x 213.79875pt>
-File: ./img/cropped_diagram.pdf Graphic file (type pdf)
-
-<use ./img/cropped_diagram.pdf>
-Package pdftex.def Info: ./img/cropped_diagram.pdf used on input line 502.
-(pdftex.def)             Requested size: 211.38779pt x 192.41708pt.
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
+<./img/cropped_diagram.pdf, id=12, 234.8775pt x 213.79875pt>
+File: ./img/cropped_diagram.pdf Graphic file (type pdf)
+
+<use ./img/cropped_diagram.pdf>
+Package pdftex.def Info: ./img/cropped_diagram.pdf used on input line 500.
+(pdftex.def)             Requested size: 234.87692pt x 213.79822pt.
+ [2 <./img/cropped_diagram.pdf
+
+pdfTeX warning: pdflatex (file ./img/cropped_diagram.pdf): PDF inclusion: inval
+id other resource which is no dict (key 'ProcSets', type <array>); ignored.
+>]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ˜ in font ptmr7t!
@@ -285,16 +290,11 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
 
-Underfull \hbox (badness 1694) in paragraph at lines 599--600
+Underfull \hbox (badness 1694) in paragraph at lines 600--601
 \OT1/ptm/m/n/8 D., Botezatu, N., Herghelegiu, P., Moldoveanu, F., Stru-millo, P
 .,
  []
 
-[2 <./img/cropped_diagram.pdf
-
-pdfTeX warning: pdflatex (file ./img/cropped_diagram.pdf): PDF inclusion: inval
-id other resource which is no dict (key 'ProcSets', type <array>); ignored.
->]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -310,10 +310,10 @@ Before submitting the final camera ready copy, remember to:
 
 ] (./bare_conf.aux) ) 
 Here is how much of TeX's memory you used:
- 3330 strings out of 493029
- 55328 string characters out of 6136234
- 117799 words of memory out of 5000000
- 6853 multiletter control sequences out of 15000+600000
+ 3332 strings out of 493029
+ 55342 string characters out of 6136234
+ 117809 words of memory out of 5000000
+ 6855 multiletter control sequences out of 15000+600000
  35665 words of font info for 72 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  37i,11n,39p,1593b,288s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -324,7 +324,7 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
 imes/utmr8a.pfb>
-Output written on bare_conf.pdf (3 pages, 316351 bytes).
+Output written on bare_conf.pdf (3 pages, 317850 bytes).
 PDF statistics:
  57 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream
