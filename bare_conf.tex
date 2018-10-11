@@ -427,7 +427,7 @@ Vilnius, Lithuania.
 
 \begin{abstract}
 %\boldmath
-In this short article we describe and discuss high level architecture of computer vision-based system for partial compensation of lost or impaired human vision. 
+In this short article we describe and discuss high level architecture of computer vision-based system for partial compensation of lost or impaired human vision.
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
 % This preserves the distinction between vectors and scalars. However,
@@ -490,7 +490,7 @@ User interface consists of a wearable forehead belt, integrating RGB and depth c
 
 % External vision processor
 %visus sutrumpinimus reikia pirma parasyt pilnai, pvz Neural Network (NN)
-Although modern high-end smartphones contain quite powerful computers inside, many computer vision algorithms often demand hardware of significantly higher computational capacity (e.g. server with graphics processing unit (GPU)). This motivates us to employ external server for vision data processing. In our design we assume such a server with a set of computer vision algorithms implemented and exposed via web services: faster regions with convolutional neural network features (faster R-CNN) object detector \cite{Ren}, trained to detect important objects, convolutional and recurrent neural network (CNN and RNN)-based scene description \cite{Liu}, which provides textual annotation of a given RGB image, place recognition \cite{Ohn-Bar}, face detection and recognition \cite{Amos}, obstacle detection \cite{Laina}, among others. After completing the analysis it's results are transmitted back to the smartphone component and represented to the user through the aforementioned interface.
+Although modern high-end smartphones contain quite powerful computers inside, many computer vision algorithms often demand hardware of significantly higher computational capacity (e.g. server with graphics processing unit (GPU)). This motivates us to employ external server for vision data processing. In our design we assume such a server with a set of computer vision algorithms implemented and exposed via web services: faster regions with convolutional neural network features (faster R-CNN) object detector \cite{Ren}, trained to detect important objects, convolutional and recurrent neural network (CNN and RNN)-based scene description \cite{Liu}, which provides textual annotation of a given RGB image, place recognition \cite{Ohn-Bar}, face detection and recognition \cite{Amos}, \cite{Verilook}, obstacle detection \cite{Laina}, among others. After completing the analysis it's results are transmitted back to the smartphone component and represented to the user through the aforementioned interface.
 
 
 
@@ -527,7 +527,7 @@ Appearance, usability and cost of the end product are of major importance to the
 %Didzioji Discussion teksto dalis man labiau tinka prie Results/Conclusion. Gal galim padiskutioti daugiau apie Limitations, Future Implications, Lessons Learned ar pan... Cia galime savo siuloma sistema lyginti su anksciau publikuotais rezultatais. 
 
 
-In this article we outlined an idea of complex computer vision-based sensor architecture, which may help to partially compensate impaired or lost human sight. Main advantages of therein suggested system are: ability to use efficient (but still computationally intensive) modern computer vision algorithms via the Internet connection, present the output of video processing to the user through a combined audio/tactile interface. Comparing to an existing commercial products e.g. \cite{orcam}, \cite{horus}, our approach is advantageous, since it does not rely only on computational capacity of mobile handset. Such a combination of local interface and remote vision processor will be even more efficient in the future, with switching of mobile networks to 5G. Combined audio/tactile interface also may be more convenient for users, since it allows to provide more concentrated information comparing to purely audio or purely tactile interface.
+In this article we outlined an idea of complex computer vision-based cybernetic sensor architecture, which may help to partially compensate impaired or lost human sight. Main advantages of therein suggested system are: ability to use efficient (but still computationally intensive) modern computer vision algorithms via the Internet connection, present the output of video processing to the user through a combined audio/tactile interface. Comparing to an existing commercial products e.g. \cite{orcam}, \cite{horus}, our approach is advantageous, since it does not rely only on computational capacity of mobile handset. Such a combination of mobile interface and remote vision processor will be even more efficient in the future, with switching of mobile networks to 5G. Combined audio/tactile interface also may be more convenient for the users, since it allows to provide more concentrated information comparing to purely audio or purely tactile interface.
 
 The suggested system does not aim to replace the main travelling aid of visually impaired people - the white cane. Instead, this computer vision tool aims to enhance and push the perception of the surounding environment boundary from 1-2 meters (achieved by using the white cane) to 2-10 meters. It may improve route planning and identification of objects of interest (for instance, doors, stairs, elevators, bus stopps, etc.). This functionality corresponds with the main requirement for electronic travelling aids identified by the end users - direction and distance estimation to a selected object. The proposed hardware architecture can be used as a basis for various computer vision-based software modules, aiming to assist visually impaired users in daily activities (e.g. outdoor/indoor navigation, object/face recognition, obstacle detection, etc.). 
 
@@ -627,6 +627,8 @@ This research is/was funded by the European Regional Development Fund according 
 \bibitem{Amos} Amos, B., Ludwiczuk, B., and Satyanarayanan, M. Openface:
 A general-purpose face recognition library with mobile applications. Technical report, CMU-CS-16-118, CMU School of Computer Science, 2016.
 
+\bibitem{Verilook} https://www.neurotechnology.com/verilook.html
+
 \bibitem{Laina} Laina, I., Rupprecht, C., Belagiannis, V., Tombari, F., Navab, N. Deeper depth prediction with fully convolutional residual networks. Fourth International Conference on 3D Vision (3DV), pp. 239-248, 2016.
 
 \bibitem{orcam} https://www.orcam.com/en/
@@ -634,7 +636,6 @@ A general-purpose face recognition library with mobile applications. Technical r
 \bibitem{horus} http://www.horus.tech
 
 
-%\bibitem{Verilook} \url{http://www.neurotechnology.com}
 
 
 
