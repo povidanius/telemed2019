@@ -427,7 +427,7 @@ Vilnius, Lithuania.
 
 \begin{abstract}
 %\boldmath
-In this short article we describe and discuss high level architecture of computer vision-based system for partial compensation of lost or impaired human vision.
+In this short article we describe and discuss high level architecture of computer vision-based system for partial compensation of lost or impaired human vision. Combining standard smartphone device, external deep learning based vision processor and audio-tactile user interface into compact visual perception compensation device the suggested architecture may be advantageous both for researchers and industrial product developers.
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
 % This preserves the distinction between vectors and scalars. However,
@@ -439,7 +439,7 @@ In this short article we describe and discuss high level architecture of compute
 % no keywords
 
 \begin{IEEEkeywords}
-Computer vision; Mobile application; Aid for blind and visually impaired; Tactile feedback; Impaired human vision compensation.%
+Computer vision; Deep learning; Mobile application; Aid for blind and visually impaired; Audio feedback; Tactile feedback; Impaired human vision compensation.%
 \end{IEEEkeywords}
 
 
@@ -490,9 +490,13 @@ User interface consists of a wearable forehead belt, integrating RGB and depth c
 
 % External vision processor
 %visus sutrumpinimus reikia pirma parasyt pilnai, pvz Neural Network (NN)
-Although modern high-end smartphones are quite powerful computers themselves, many computer vision algorithms often demand hardware of significantly higher computational capacity (e.g. server with graphics processing unit (GPU)). This motivates us to employ external server for vision data processing. In our design we assume such a server with a set of computer vision algorithms implemented and exposed via web services: faster regions with convolutional neural network features (faster R-CNN) object detector \cite{Ren}, trained to detect important objects, convolutional and recurrent neural network (CNN and RNN)-based scene description \cite{Liu}, which provides textual annotation of a given RGB image, place recognition \cite{Ohn-Bar}, face detection and recognition \cite{Amos}, obstacle detection \cite{Laina}, among others. After completing the analysis it's results are transmitted back to the smartphone component and represented to the user through the aforementioned interface.
+Although modern high-end smartphones are quite powerful computers themselves, many computer vision algorithms often demand hardware of significantly higher computational capacity (e.g. server with graphics processing unit (GPU)). This motivates us to employ an external server for vision data processing. In our design we assume such a server with a set of computer vision algorithms implemented and exposed via web services: faster regions with convolutional neural network features (faster R-CNN) object detector \cite{Ren}, trained to detect important objects, convolutional and recurrent neural network (CNN and RNN)-based scene description \cite{Liu}, which provides textual annotation of a given RGB image, place recognition \cite{Ohn-Bar}, face detection and recognition \cite{Amos}, obstacle detection \cite{Laina}, action recognition \cite{Valor} among others. After completing the analysis it's results are transmitted back to the smartphone component and represented to the user through the aforementioned interface.
 
+% How user controls system
+Gesture or voice command recognition can be used to select system's operation regime (e.g. optical character recognition (OCR), currency recognition, object detection, navigation aid).
 
+% Potential applications
+Social networking functionality was accepted as a potentially important feature allowing other users/volunteers to describe certain objects (for instance, temporary road works) with exact location and description. Navigating around such obstacles can be challenging for computer vision-based tools and may decrease user's trust in the tool. Integration of additional information from other users, governmental organizations and volunteers could be of high value for the visually impaired people.
 
 %\begin{wrapfigure}{r}{0.4\textwidth}
 \begin{figure}
@@ -513,7 +517,7 @@ Major focus was put on a easy to use and minimalistic tool, which can be trusted
 
 %Povilai, paziurek ar cia viskas OK, pridek ka nors nuo saves
 % Pamineti mobilenet ir pan.
-Computer vision technology is under rapid development and during the last years made a major breakthrough in performance and efficiency. Deep learning neural networks, which are de facto standard in modern image/video processing, are now well supported by software libraries and dedicated processing hardware is built-in even in relatively low-power computational devices, such as smartphones. These devices are also equipped with 4G Internet connectivity and sufficient computational power to perform initial data processing locally. The maturity of the aforementioned technologies suggest that our proposed computational aid for visually impaired persons may be highly feasible. 
+Computer vision technology is under rapid development and during the last years made a major breakthrough in performance and efficiency. Deep learning neural networks, which are de facto standard in modern image/video processing, are now well supported by software libraries and dedicated processing hardware is built-in even in relatively low-power computational devices, such as smartphones. The application of both open source and commercial computer vision software libraries (e.g. \cite{Verilook} face recognition kit) could reduce development costs. These devices are also equipped with 4G Internet connectivity and sufficient computational power to perform initial data processing locally. The maturity of the aforementioned technologies suggest that our proposed computational aid for visually impaired persons may be highly feasible. 
 
 
 The cornerstone of this project is the interface between the visually impaired person and the assistive technology. We are proposing a combination of audio and tactile feedback, which may improve the interaction between the assistive technology and the user. Similar interfaces were suggested by research communities earlier \cite{Zientara}, \cite{Poggi}, however, existing knowledge on user preferences and evaluation of various options of tactile feedback (types of actuators, placement on the body, frequencies, strength, etc.) is limited. 
@@ -596,7 +600,7 @@ This research is/was funded by the European Regional Development Fund according 
 
 \bibitem{Caraiman} Caraiman, S., Morar, A., Owczarek, M.,Burlacu, A., Rzeszotarski, D., Botezatu, N., Herghelegiu, P., Moldoveanu, F., Strumillo, P., Moldoveanu, A. Computer Vision for the Visually Impaired: the Sound of Vision System. IEEE International Conference on Computer Vision Workshops, pp. 1480-1489, 2017.
 
-\bibitem{Csapo} Csap\'{o}, A., Wers\'{e}nyi, G., Nagy, H., Stockman, T. A survey of assistive technologies and applications for blind users on mobile platforms: a review and foundation for research. Journal on Multimodal User Interfaces. Vol. 9, issule 4,  pp. 275-286, 2015.
+\bibitem{Csapo} Csap\'{o}, A., Wers\'{e}nyi, G., Nagy, H., Stockman, T. A survey of assistive technologies and applications for blind users on mobile platforms: a review and foundation for research. Journal on Multimodal User Interfaces. Vol. 9, issue 4,  pp. 275-286, 2015.
 
 
 \bibitem{Poggi} Poggi, M., Mattoccia, S. A wearable mobility aid for the visually impaired based on embedded 3d vision and deep learning. Proceeding of IEEE Symposium on Compututers and Communication, pp. 208-213, 2016.
@@ -624,15 +628,18 @@ This research is/was funded by the European Regional Development Fund according 
 \bibitem{Amos} Amos, B., Ludwiczuk, B., and Satyanarayanan, M. Openface:
 A general-purpose face recognition library with mobile applications. Technical report, CMU-CS-16-118, CMU School of Computer Science, 2016.
 
-%\bibitem{Verilook} VeroLook SDK, https://www.neurotechnology.com/verilook.html
 
 \bibitem{Laina} Laina, I., Rupprecht, C., Belagiannis, V., Tombari, F., Navab, N. Deeper depth prediction with fully convolutional residual networks. Fourth International Conference on 3D Vision (3DV), pp. 239-248, 2016.
 
-\bibitem{orcam} https://www.orcam.com 
-
-\bibitem{horus} http://www.horus.tech
+\bibitem{Valor} Varol, G., Laptev, I., Schmid, C. Long-Term Temporal Convolutions for Action Recognition.  IEEE Transactions on Pattern Analysis and Machine Intelligence. Vol. 40, issue 6, pp. 1510 - 1517.
 
 
+
+\bibitem{Verilook} VeriLook SDK, https://www.neurotechnology.com/verilook.html
+
+\bibitem{orcam} Orcam system, https://www.orcam.com 
+
+\bibitem{horus} Horus system, http://www.horus.tech
 
 
 
