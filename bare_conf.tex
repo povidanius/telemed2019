@@ -428,7 +428,7 @@ Vilnius, Lithuania.
 
 \begin{abstract}
 %\boldmath
-This paper presents a high level architecture for computer vision-based system for partial compensation of lost or impaired human vision. It combines standard smartphone device, external deep learning-based image processing infrastructure and audio/tactile user interface. The proposed architecture is based on  input from user-centered design process, involving end users into system development. The paper discusses user needs and expectations towards electronic travelling aids for the blind and highlights limitations of the existing solutions. The suggested architecture may be used as a basis for developing computer vision-based tools for visually impaired individuals. 
+This paper presents a high-level architecture for computer vision-based system for partial compensation of lost or impaired human vision. It combines standard smartphone device, external deep learning-based image processing infrastructure and audio/tactile user interface. The proposed architecture is based on  input from user-centered design process, involving end users into system development. The paper discusses user needs and expectations towards electronic travelling aids for the blind and highlights limitations of the existing solutions. The suggested architecture may be used as a basis for developing computer vision-based tools for visually impaired individuals. 
 %In this short article we describe and discuss high level architecture of computer vision-based system for partial compensation of lost or impaired human vision. Combining standard smartphone device, external deep learning-based live video processoing infrastructure and audio/tactile user interface into compact visual perception compensation device .
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
@@ -441,7 +441,7 @@ This paper presents a high level architecture for computer vision-based system f
 % no keywords
 
 \begin{IEEEkeywords}
-Computer vision; Deep learning; Mobile application; Aid for blind and visually impaired; Audio feedback; Tactile feedback; Impaired human vision compensation; User-centered design.%
+computer vision; deep learning; mobile application; aid for blind and visually impaired; audio feedback; tactile feedback; impaired human vision compensation; user-centered design.%
 \end{IEEEkeywords}
 % For peer review papers, you can put extra information on the cover
 % page as needed:
@@ -454,7 +454,7 @@ Computer vision; Deep learning; Mobile application; Aid for blind and visually i
 \IEEEpeerreviewmaketitle
 \section{Introduction}
 \label{sec:introduction}
-More than $250$ million people worldwide have moderate to severe vision impairment, while ($\approx 36$ million are blind) \cite{Bourne}. During the past decades significant effort was devoted to develop computer vision and other sensor based aids (e.g. \cite{Caraiman}, \cite{Csapo}, \cite{Poggi}, \cite{Zientara}) for helping the blind and visually impaired users to perceive the surrounding world better. However, computer vision is a rapidly evolving field; systems based on the aforementioned approaches become outdated in a relatively short time and often lack accuracy and reliability in real-world conditions in comparison to the state-of-the-art technologies. In this article we describe a system, which employs modern computer vision techniques for compensation of lost or impaired vision function in humans. Many of the previously proposed electronic aids for the blind count on highly specialized hardware, for instance smart glasses \cite{Zientara}, Microsoft Kinnect sensors \cite{Owayjan}, helmet-mounted photo sensors and cameras \cite{Dunai}. Such systems often lack convenience and bring additional complexity into daily tasks, which visually impaired people currently manage by the help of a white cane. This project puts major emphasis on developing a tool, which seamlessly integrates with the hardware visually impaired persons already have on-hand and is used to (smartphone). This paper describes a high level architecture of the technology aid for visually impaired people utilizing the latest achievements in the field of computer vision. 
+More than $250$ million people worldwide have moderate to severe vision impairment, while ($\approx 36$ million are blind) \cite{Bourne}. During the past decades significant effort was devoted to develop computer vision and other sensor based aids (e.g. \cite{Caraiman}, \cite{Csapo}, \cite{Poggi}, \cite{Zientara}) for helping the blind and visually impaired users to perceive the surrounding world better. However, computer vision is a rapidly evolving field; systems based on the aforementioned approaches become outdated in a relatively short time and often lack accuracy and reliability in real-world conditions in comparison to the state-of-the-art technologies. In this article we describe a system, which employs modern computer vision techniques for compensation of lost or impaired vision function in humans. Many of the previously proposed electronic aids for the blind count on highly specialized hardware, for instance smart glasses \cite{Zientara}, Microsoft Kinnect sensors \cite{Owayjan}, helmet-mounted photo sensors and cameras \cite{Dunai}. Such systems often lack convenience and bring additional complexity into daily tasks, which visually impaired people currently manage by the help of a white cane. This project puts major emphasis on developing a tool, which seamlessly integrates with the hardware visually impaired persons already have on-hand and are used to (smartphone). This paper describes a high level architecture of the technology aid for visually impaired people utilizing the latest achievements in the field of computer vision. 
 
 
 \section{Method}
@@ -463,11 +463,20 @@ More than $250$ million people worldwide have moderate to severe vision impairme
 Following the principles of the participatory design \cite{Kensing}, \cite{Carroll} we included the end-users into the design process of the system. Two visually impaired persons participated in discussion and focus group meetings together with the project team to identify the key properties of the solution. During the six discussion sessions major attention was paid to:
 \begin{enumerate}
 \item Functionality and key features of the solution addressing real-life scenarios of visually impaired persons;
-\item Technical feasibility, connecting user needs to the latest development in computer vision and assisted technologies;
-\item Interface between the visually impaired person and the assisted technology;
+\item Technical feasibility, connecting user needs to the latest development in computer vision and assistive technologies;
+\item Interface between the visually impaired person and the assistive technology;
 \item Appearance, usability and potential costs of the proposed product. 
 \end{enumerate}
-Design process included testing of the existing mobile phone app (Seeing AI) for assisting visually impaired people. Semi-structured tests were performed by the visually impaired participants accompanied by a researcher from the project group. Strengths and weaknesses of the existing solutions are reflected in the design of the proposed system. 
+Participatory design process included testing of assistive technologies for the blind and visually impaired people using widely available mobile phone apps like Seeing AI, BlindWays, Be my eyes, Aipoly Vision, TapTapSee, etc.
+%Design process included testing of the existing mobile phone apps (Seeing AI, BlindWays, Be My Eyes, Aipoly Vision, TapTapSee) for assisting visually impaired people. 
+Semi-structured tests were performed by visually impaired participants and researchers from the project group. Strengths and weaknesses of the existing solutions are reflected in the design of the proposed system. 
+
+%Darius
+To have an overview of research progress on assistive technologies for the blind in the last ten years, a systematic literature review three major research databases (Medline, IEEE xplore and ACM DL) was conducted. 
+we carried out  systemic review of research articles in databases like  Medline, IEEE xplore, ACM DL.  It revealed increasing research interest in the field (84 related publications were identified, while 17 were characterized as highly relevant for this project). 
+Systemic review of the relevant patents and patent applications worldwide was performed using online services of the following databases: EspaceNet, GooglePatents, USPTO, PatentScope, FreePatentsOnline. It revealed several main technological trends in the area of assistive technologies for the blind persons. 
+Based on the above aforementioned methodical review approaches, some our insights are presented in the Results section.
+
 
 
 
