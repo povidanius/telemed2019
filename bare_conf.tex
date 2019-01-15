@@ -69,7 +69,7 @@
 \usepackage{caption}
 \usepackage{graphicx}
 \usepackage{hyperref}
-
+\usepackage{etoolbox}
 
 
 
@@ -362,6 +362,7 @@
 \parskip 3pt plus 2pt minus 1pt
 
 \pagestyle{empty}
+
 \begin{document}
 \pagenumbering{gobble}
 %
@@ -425,6 +426,8 @@ Vilnius, Lithuania.
 % make the title area
 \maketitle
 
+\setlength{\parskip}{0.1em} % reduce spacings between paragraphs
+
 
 \begin{abstract}
 %\boldmath
@@ -454,8 +457,11 @@ computer vision; deep learning; mobile application; aid for blind and visually i
 \IEEEpeerreviewmaketitle
 \section{Introduction}
 \label{sec:introduction}
-More than $250$ million people worldwide have moderate to severe vision impairment, while ($\approx 36$ million are blind) \cite{Bourne}. During the past decades significant effort was devoted to develop computer vision and other sensor based aids (e.g. \cite{Caraiman}, \cite{Csapo}, \cite{Poggi}, \cite{Zientara}) for helping the blind and visually impaired users to perceive the surrounding world better. However, computer vision is a rapidly evolving field; systems based on the aforementioned approaches become outdated in a relatively short time and often lack accuracy and reliability in real-world conditions in comparison to the state-of-the-art technologies. In this article we describe a system, which employs modern computer vision techniques for compensation of lost or impaired vision function in humans. Many of the previously proposed electronic aids for the blind count on highly specialized hardware, for instance smart glasses \cite{Zientara}, Microsoft Kinnect sensors \cite{Owayjan}, helmet-mounted photo sensors and cameras \cite{Dunai}. Such systems often lack convenience and bring additional complexity into daily tasks, which visually impaired people currently manage by the help of a white cane. This project puts major emphasis on developing a tool, which seamlessly integrates with the hardware visually impaired persons already have on-hand and are used to (smartphone). This paper describes a high level architecture of the technology aid for visually impaired people utilizing the latest achievements in the field of computer vision. 
+More than $250$ million people worldwide have moderate to severe vision impairment, while ($\approx 36$ million are blind) \cite{Bourne}. During the past decades significant effort was devoted to develop computer vision and other sensor based aids (e.g. \cite{Caraiman}, \cite{Csapo}, \cite{Poggi}, \cite{Zientara}) for helping the blind and visually impaired users to perceive the surrounding world better. However, computer vision is a rapidly evolving field; systems based on the aforementioned approaches become outdated in a relatively short time and often lack accuracy and reliability in real-world conditions in comparison to the state-of-the-art technologies. In this article, we describe a system, which employs modern computer vision techniques for compensation of lost or impaired vision function in humans. Many of the previously proposed electronic aids for the blind count on highly specialized hardware, for instance smart glasses \cite{Zientara}, Microsoft Kinnect sensors \cite{Owayjan}, helmet-mounted photo sensors and cameras \cite{Dunai}. Such systems often lack convenience and bring additional complexity into daily tasks, which visually impaired people currently manage by the help of a white cane. This project puts major emphasis on developing a tool, which seamlessly integrates with the hardware visually impaired persons already have on-hand and are used to (smartphone). This paper describes a high level architecture of the technology aid for visually impaired people utilizing the latest achievements in the field of computer vision. 
 
+% corr start
+This paper is structured as follows. We start our presentation with Section~\ref{sec:method}, which describes the methodological foundations of this research. Section~\ref{sec:results} detalizes the architecture of the aforementioned system. Finally, Section~\ref{sec:discussion} summarizes and discusses the results of conducted analysis.
+% corr end
 
 \section{Method}
 \label{sec:method}
@@ -486,7 +492,7 @@ Based on the aforementioned methodical reviews, our insights are presented in th
 \section{Results}
 \label{sec:results}
 
-User-centered design sessions with visually impaired persons and analysis of the aforementioned data sources provided substantial input for the design of the proposed system (Fig.~\ref{fig:schematics}). The process made it clear that understanding of the user needs was limited in the project team. Based on the results of the user-centered design process, scientific publications and patent analysis, we present the outline of the system for impaired human vision compensation. 
+User-centered design sessions with visually impaired persons and analysis of the aforementioned data sources provided substantial input for the design of the proposed system (Figure~\ref{fig:schematics}). The process made it clear that understanding of the user needs was limited in the project team. Based on the results of the user-centered design process, scientific publications and patent analysis, we present the outline of the system for impaired human vision compensation. 
 
 The key part of the proposed system is a smartphone device, connecting user interface (UI) and data processing components into a well-functioning ecosystem. Smartphone was selected due to its high availability and capability to perform required computations or forward visual information for processing to the external server via the Internet.
 
@@ -593,7 +599,7 @@ This research is/was funded by the European Regional Development Fund according 
 %\bibliography{bibtemplate_samples}
 
 
-\begin{thebibliography}{1}
+\begin{thebibliography}{99}
 
 \bibitem{Bourne} Bourne RRA, Flaxman SR, Braithwaite T, Cicinelli MV, Das A, Jonas JB, et al.; Vision Loss Expert Group. Magnitude, temporal trends, and projections of the global prevalence of blindness and distance and near vision impairment: a systematic review and meta-analysis. Lancet Glob Health. Vol. 5(9):e888-97, 2017.
 
@@ -615,8 +621,7 @@ This research is/was funded by the European Regional Development Fund according 
 \bibitem{Kensing} Kensing, F., Simonsen, J., and B\o dker, K. MUST: A Method for Participatory Design. Hum-Comput Interact, vol. 13, no. 2, pp. 167-198, Jun. 1998.
 
 
-\bibitem{Carroll} Carroll, J. M., Rosson, M. B. Participatory design in community informatics. Des. Stud., vol. 28, no. 3, pp. 243-261, May 2007.
-
+\bibitem{Carroll} \noindent Carroll, J. M., Rosson, M. B. Participatory design in community informatics. Des. Stud., vol. 28, no. 3, pp. 243-261, May 2007.
 
 \bibitem{Ren} Ren, Sh., He, K., Girshick, R., and Sun, J.  Faster R-CNN: Towards real-time object detection with region proposal networks. In Advances in neural information processing systems, pp. 91-99, 2015.
 
@@ -640,10 +645,6 @@ A general-purpose face recognition library with mobile applications. Technical r
 \bibitem{horus} Horus. Horus system. [Online]. Available from http://www.horus.tech 2018-10-16.
 
 \bibitem{Verilook} Neurotechnology, VeriLook SDK. [Online]. Available from https://www.neurotechnology.com/verilook.html 2018-10-16.
-
-
-
-
 
 
 \end{thebibliography}

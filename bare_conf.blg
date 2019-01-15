@@ -14,16 +14,19 @@ Warning--I didn't find a database entry for "Csapo"
 Warning--I didn't find a database entry for "Poggi"
 Warning--I didn't find a database entry for "Zientara"
 Warning--I didn't find a database entry for "Owayjan"
-Warning--I didn't find a database entry for "Larisa"
+Warning--I didn't find a database entry for "Dunai"
 Warning--I didn't find a database entry for "Kensing"
 Warning--I didn't find a database entry for "Carroll"
-Warning--I didn't find a database entry for "?"
-Warning--I didn't find a database entry for "Liu"
 Warning--I didn't find a database entry for "Ren"
-Warning--I didn't find a database entry for "Dai"
+Warning--I didn't find a database entry for "Liu"
 Warning--I didn't find a database entry for "Ohn-Bar"
 Warning--I didn't find a database entry for "Amos"
 Warning--I didn't find a database entry for "Laina"
+Warning--I didn't find a database entry for "Valor"
+Warning--I didn't find a database entry for "Tensorflow"
+Warning--I didn't find a database entry for "orcam"
+Warning--I didn't find a database entry for "horus"
+Warning--I didn't find a database entry for "Verilook"
 -- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -31,7 +34,7 @@ Warning--I didn't find a database entry for "Laina"
 Done.
 You've used 0 entries,
             4035 wiz_defined-function locations,
-            841 strings with 7393 characters,
+            846 strings with 7440 characters,
 and the built_in function-call counts, 103 in all, are:
 = -- 0
 > -- 0
