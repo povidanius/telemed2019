@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.1.3)  15 JAN 2019 22:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.1.3)  15 JAN 2019 23:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -286,6 +286,27 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count103
 )
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 702.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2015/12/30 v3.0k Driver-dependent file (DPC,SPQR)
+))
 
 LaTeX Warning: Unused global option(s):
     [compsocconf].
@@ -293,20 +314,20 @@ LaTeX Warning: Unused global option(s):
 (./bare_conf.aux)
 \openout1 = `bare_conf.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 366.
-LaTeX Font Info:    ... okay on input line 366.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 366.
-LaTeX Font Info:    ... okay on input line 366.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 366.
-LaTeX Font Info:    ... okay on input line 366.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 366.
-LaTeX Font Info:    ... okay on input line 366.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 366.
-LaTeX Font Info:    ... okay on input line 366.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 366.
-LaTeX Font Info:    ... okay on input line 366.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 366.
-LaTeX Font Info:    ... okay on input line 366.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 367.
+LaTeX Font Info:    ... okay on input line 367.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 367.
+LaTeX Font Info:    ... okay on input line 367.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 367.
+LaTeX Font Info:    ... okay on input line 367.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 367.
+LaTeX Font Info:    ... okay on input line 367.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 367.
+LaTeX Font Info:    ... okay on input line 367.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 367.
+LaTeX Font Info:    ... okay on input line 367.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 367.
+LaTeX Font Info:    ... okay on input line 367.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count104
@@ -340,7 +361,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box28
-Package hyperref Info: Link coloring OFF on input line 366.
+Package hyperref Info: Link coloring OFF on input line 367.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -350,39 +371,35 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count110
 )
-LaTeX Info: Redefining \ref on input line 366.
-LaTeX Info: Redefining \pageref on input line 366.
-LaTeX Info: Redefining \nameref on input line 366.
+LaTeX Info: Redefining \ref on input line 367.
+LaTeX Info: Redefining \pageref on input line 367.
+LaTeX Info: Redefining \nameref on input line 367.
 
 (./bare_conf.out) (./bare_conf.out)
 \@outlinefile=\write3
 \openout3 = `bare_conf.out'.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 428.
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 428.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 429.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 429.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <11> on input line 428.
+(Font)              <11> on input line 429.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.69997> on input line 428.
+(Font)              <7.69997> on input line 429.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.5> on input line 428.
+(Font)              <5.5> on input line 429.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 428.
+(Font)              <8> on input line 429.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 428.
+(Font)              <6> on input line 429.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 428.
+(Font)              <5> on input line 429.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 428.
-
-Underfull \vbox (badness 6978) has occurred while \output is active []
-
+(Font)              <7> on input line 429.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]
-<./img/cropped_diagram.pdf, id=69, 234.8775pt x 213.79875pt>
+] <./img/cropped_diagram.pdf, id=65, 234.8775pt x 213.79875pt>
 File: ./img/cropped_diagram.pdf Graphic file (type pdf)
 
 <use ./img/cropped_diagram.pdf>
@@ -414,9 +431,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.635 \bibitem{Laina}
-                      Laina, I., Rupprecht, C., Belagiannis, V., Tombari, F....
-[3]
+l.638 
+       [3]
 Underfull \hbox (badness 10000) in paragraph at lines 645--646
 []\OT1/ptm/m/n/8 Neurotechnology, Ver-iLook SDK. [On-line]. Avail-able from
  []
@@ -450,23 +466,23 @@ Package rerunfilecheck Info: File `bare_conf.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 654.
  ) 
 Here is how much of TeX's memory you used:
- 7199 strings out of 493029
- 112739 string characters out of 6136235
- 207695 words of memory out of 5000000
- 10662 multiletter control sequences out of 15000+600000
+ 7677 strings out of 493029
+ 118519 string characters out of 6136235
+ 221012 words of memory out of 5000000
+ 11131 multiletter control sequences out of 15000+600000
  35665 words of font info for 72 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 36i,11n,39p,1602b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,11n,39p,1573b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on bare_conf.pdf (4 pages, 325421 bytes).
+Output written on bare_conf.pdf (4 pages, 325383 bytes).
 PDF statistics:
- 151 PDF objects out of 1000 (max. 8388607)
- 127 compressed objects within 2 object streams
+ 147 PDF objects out of 1000 (max. 8388607)
+ 123 compressed objects within 2 object streams
  32 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
