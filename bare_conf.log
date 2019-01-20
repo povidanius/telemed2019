@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.1.3)  18 JAN 2019 22:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.1.3)  20 JAN 2019 21:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -413,32 +413,32 @@ LaTeX Info: Redefining \nameref on input line 368.
 \openout3 = `bare_conf.out'.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 459.
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 459.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 460.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 460.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <11> on input line 459.
+(Font)              <11> on input line 460.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.69997> on input line 459.
+(Font)              <7.69997> on input line 460.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.5> on input line 459.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 459.
+(Font)              <5.5> on input line 460.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 460.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-LaTeX Font Info:    Try loading font information for OMS+pcr on input line 459.
+LaTeX Font Info:    Try loading font information for OMS+pcr on input line 460.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspcr.fd
 File: omspcr.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <11> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 459.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 460.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 491.
+(Font)              <7> on input line 492.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 491.
+(Font)              <5> on input line 492.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -447,16 +447,16 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: ./img/cropped_diagram.pdf Graphic file (type pdf)
 
 <use ./img/cropped_diagram.pdf>
-Package pdftex.def Info: ./img/cropped_diagram.pdf used on input line 552.
+Package pdftex.def Info: ./img/cropped_diagram.pdf used on input line 553.
 (pdftex.def)             Requested size: 234.87692pt x 213.79822pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 5970) has occurred while \output is active []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.565 
+l.566 
        [2 <./img/cropped_diagram.pdf
 
 pdfTeX warning: pdflatex (file ./img/cropped_diagram.pdf): PDF inclusion: inval
@@ -472,9 +472,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.647 
+l.645 
        [3]
-Underfull \hbox (badness 10000) in paragraph at lines 676--677
+Underfull \hbox (badness 10000) in paragraph at lines 677--678
 []\OT1/ptm/m/n/8 Neurotechnology, Ver-iLook SDK. [On-line]. Avail-able from
  []
 
@@ -489,28 +489,28 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 685.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 686.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.685 \end{document}
+l.686 \end{document}
                      [4
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 685.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 686.
  (./bare_conf.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 685.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 685.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 686.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 686.
 Package rerunfilecheck Info: File `bare_conf.out' has not changed.
 (rerunfilecheck)             Checksum: 4941B24669202A1871022866ECCBCEDB;221.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 685.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 686.
  ) 
 Here is how much of TeX's memory you used:
- 7978 strings out of 493029
- 123138 string characters out of 6136235
- 225773 words of memory out of 5000000
- 11415 multiletter control sequences out of 15000+600000
+ 7979 strings out of 493029
+ 123143 string characters out of 6136235
+ 224773 words of memory out of 5000000
+ 11416 multiletter control sequences out of 15000+600000
  36347 words of font info for 72 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  36i,10n,39p,1573b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -520,7 +520,7 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
 fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on bare_conf.pdf (4 pages, 328631 bytes).
+Output written on bare_conf.pdf (4 pages, 328706 bytes).
 PDF statistics:
  147 PDF objects out of 1000 (max. 8388607)
  123 compressed objects within 2 object streams
